@@ -11,8 +11,9 @@ class Ingredients(unittest.TestCase):
     @classmethod  # 使用装饰器使装饰器下的方法仅运行一次
     def setUpClass(self) -> None:
         # 调用Login_first类中的登录方法
-        t = Login_first("jgzh01", "su123456", "801B", "ops")
-        self.driver = t.login()
+        # t = Login_first("jgzh01", "su123456", "801B", "ops")
+        # self.driver = t.login()
+        self.driver = webdriver.Chrome()
 
         """
         辅料库--待审核辅料库
@@ -215,15 +216,18 @@ class Ingredients(unittest.TestCase):
         sleep(0.5)
         self.driver.find_element_by_xpath('/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]').click()
         sleep(0.5)
+        self.driver.quit()
 
         """待审核辅料库"""
 
     def test_2_to_audit(self):
         """辅料库--待审核辅料库"""
         # 为避免定位到重复的元素，需要重载一下页面
-        self.driver.refresh()   # 刷新浏览器，使元素重载
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[3]/span').click()   # 定位辅料库模块(避免弹窗元素存在重复)
-        sleep(1)
+        # self.driver.refresh()   # 刷新浏览器，使元素重载
+        # self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[3]/span').click()   # 定位辅料库模块(避免弹窗元素存在重复)
+        # sleep(1)
+        t = Login_first("jgzh01", "su123456", "801B", "ops")
+        self.driver = t.login()
         # 待审核辅料库
         to_audit1 = '//*[@id="root"]/section/main/div[1]/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]/p'
         self.driver.find_element_by_xpath(to_audit1).click()

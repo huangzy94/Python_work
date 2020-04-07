@@ -1,9 +1,9 @@
 from selenium import webdriver
 from time import *
+import selenium
 
 # 打印当前时间
 print(ctime())
-
 
 # 创建登录类，并定义初始化方法
 class Login_first:
@@ -33,7 +33,10 @@ class Login_first:
             url = supplier
         else:
             url = self.Url
-        driver = webdriver.Chrome()
+        # opts = selenium.webdriver.ChromeOptions()
+        # opts.binary_location = "C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
+        # driver = selenium.webdriver.Chrome(chrome_options=opts)
+        driver = webdriver.Chrome("C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe")
         driver.get(url)
         print("当前访问地址为：%r" % url)
         # 使窗口最大化
@@ -55,6 +58,4 @@ if __name__ == '__main__':
     t = Login_first("jgzh01", "su123456", "801B", "ops")
     t.login()
 
-# if __name__ == '__main__':
-#     # 自测代码
-#     login("jgzh01", "su123456", "801B")
+

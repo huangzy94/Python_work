@@ -239,7 +239,7 @@ class Food(unittest.TestCase):
         # 模拟键盘回车添加sku
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys(Keys.ENTER)
 
-        button1 = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        button1 = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         sleep(1)
         error1 = None
         try:
@@ -271,8 +271,8 @@ class Food(unittest.TestCase):
             print("食材库流程测试完成！")
             print("----------------------------------------------------------------------")
 
-    @classmethod
-    def tearDownClass(self) -> None:
-        self.driver = webdriver.Chrome()
-        self.driver.close()
-        print("关闭浏览器")
+    # @classmethod
+    # def tearDownClass(self) -> None:
+    #     self.driver = webdriver.Chrome()
+    #     self.driver.close()
+    #     print("关闭浏览器")

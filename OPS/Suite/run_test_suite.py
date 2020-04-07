@@ -1,5 +1,6 @@
-import unittest
+
 import time
+import unittest
 from HTMLTestRunner import HTMLTestRunner
 from OPS.Suite.Email.AutoSendEmail import AutoSendEmail
 
