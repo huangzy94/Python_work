@@ -5,6 +5,7 @@ import selenium
 # 打印当前时间
 print(ctime())
 
+
 # 创建登录类，并定义初始化方法
 class Login_first:
     def __init__(self, Username, Password, VcCode, Url):
@@ -33,6 +34,7 @@ class Login_first:
             url = supplier
         else:
             url = self.Url
+        # jenkins部署项目出现fix cannot find Chrome binary时，需要在Chrome后面加上执行程序的安装路径
         # opts = selenium.webdriver.ChromeOptions()
         # opts.binary_location = "C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
         # driver = selenium.webdriver.Chrome(chrome_options=opts)
@@ -57,5 +59,3 @@ class Login_first:
 if __name__ == '__main__':
     t = Login_first("jgzh01", "su123456", "801B", "ops")
     t.login()
-
-

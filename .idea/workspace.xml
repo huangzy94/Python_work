@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba7c18c2-66d4-4485-b79e-892b8a3c227c" name="Default Changelist" comment="" />
+    <list default="true" id="ba7c18c2-66d4-4485-b79e-892b8a3c227c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/login.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +33,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Python_work" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -63,7 +67,7 @@
       <recent name="D:\Python_work\OPS\TsesCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.login">
+  <component name="RunManager" selected="Python.run_test_suite (1)">
     <configuration name="AutoSendEmail (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python_work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,8 +187,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.login" />
         <item itemvalue="Python.run_test_suite (1)" />
+        <item itemvalue="Python.login" />
         <item itemvalue="Python.run_test_suite" />
         <item itemvalue="Python.AutoSendEmail (1)" />
         <item itemvalue="Python.AutoSendEmail" />
@@ -239,7 +243,7 @@
       <workItem from="1585904517031" duration="1559000" />
       <workItem from="1586220709463" duration="3362000" />
       <workItem from="1586224480917" duration="1549000" />
-      <workItem from="1586226389947" duration="2829000" />
+      <workItem from="1586226389947" duration="3773000" />
     </task>
     <servers />
   </component>
@@ -260,26 +264,26 @@
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state x="2370" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1584607624540" />
-    <state width="696" height="170" key="GridCell.Tab.0.bottom" timestamp="1586229881131">
+    <state width="696" height="170" key="GridCell.Tab.0.bottom" timestamp="1586238820771">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state width="1397" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="696" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586229881131" />
-    <state width="696" height="170" key="GridCell.Tab.0.center" timestamp="1586229881130">
+    <state width="696" height="170" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586238820771" />
+    <state width="696" height="170" key="GridCell.Tab.0.center" timestamp="1586238820771">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state width="1397" height="245" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="696" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586229881130" />
-    <state width="696" height="170" key="GridCell.Tab.0.left" timestamp="1586229881130">
+    <state width="696" height="170" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586238820771" />
+    <state width="696" height="170" key="GridCell.Tab.0.left" timestamp="1586238820771">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state width="1397" height="245" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="696" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586229881130" />
-    <state width="696" height="170" key="GridCell.Tab.0.right" timestamp="1586229881130">
+    <state width="696" height="170" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586238820771" />
+    <state width="696" height="170" key="GridCell.Tab.0.right" timestamp="1586238820771">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state width="1397" height="245" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="696" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586229881130" />
+    <state width="696" height="170" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586238820771" />
     <state width="1397" height="245" key="GridCell.Tab.1.bottom" timestamp="1585361514990">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -341,9 +345,9 @@
     <SUITE FILE_PATH="coverage/Python_work$AotuSendEmail.coverage" NAME="AotuSendEmail Coverage Results" MODIFIED="1585119858018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite/Email" />
     <SUITE FILE_PATH="coverage/Python_work$test.coverage" NAME="test Coverage Results" MODIFIED="1583485200975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients_test_library2.coverage" NAME="Unittests for ingredients.Ingredients.test_library2 Coverage Results" MODIFIED="1584502368309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$run_test_suite__1_.coverage" NAME="run_test_suite (1) Coverage Results" MODIFIED="1586229385893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
+    <SUITE FILE_PATH="coverage/Python_work$run_test_suite__1_.coverage" NAME="run_test_suite (1) Coverage Results" MODIFIED="1586238820764" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_2_To_audit.coverage" NAME="Unittests for test_1_food.Food.test_2_To_audit Coverage Results" MODIFIED="1585118598566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$login.coverage" NAME="login Coverage Results" MODIFIED="1586229881124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
+    <SUITE FILE_PATH="coverage/Python_work$login.coverage" NAME="login Coverage Results" MODIFIED="1586238789778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
     <SUITE FILE_PATH="coverage/Python_work$ingredients.coverage" NAME="ingredients Coverage Results" MODIFIED="1584406941242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
   </component>
 </project>
