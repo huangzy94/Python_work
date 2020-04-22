@@ -35,9 +35,9 @@ class Login_first:
         else:
             url = self.Url
         # jenkins部署项目出现fix cannot find Chrome binary时，需要在Chrome后面加上执行程序的安装路径
-        opts = selenium.webdriver.ChromeOptions()
-        opts.binary_location = "C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
-        driver = selenium.webdriver.Chrome(chrome_options=opts)
+        options = selenium.webdriver.ChromeOptions()
+        options.binary_location = "C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"
+        driver = selenium.webdriver.Chrome(chrome_options=options)
         # driver = webdriver.Chrome("C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe")
         driver.get(url)
         print("当前访问地址为：%r" % url)

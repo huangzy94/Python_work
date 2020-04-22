@@ -147,7 +147,7 @@ class Food(unittest.TestCase):
             self.driver.find_element_by_id('goodsName').send_keys(user_name1)
             self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[7]/div[2]/button[3]').click()  # 保存
         elif message == "未知错误":
-            print(message)
+            print("新增SKU:", message)
             self.driver.close()
 
         # 规格信息
@@ -215,7 +215,10 @@ class Food(unittest.TestCase):
         food_delete = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[4]'
         self.driver.find_element_by_xpath(food_delete).click()
         sleep(0.5)
-        self.driver.find_element_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]').click()
+        try:
+            self.driver.find_element_by_xpath('/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]').click()
+        except Exception as error:
+            print("定位食材删除按钮失败：", error)
         sleep(0.5)
         print("end:食材库测试流程结束")
 
@@ -238,8 +241,8 @@ class Food(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys("饼干")
         # 模拟键盘回车添加sku
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys(Keys.ENTER)
-
-        button1 = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        sleep(0.5)
+        button1 = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         sleep(1)
         error1 = None
         try:
@@ -259,7 +262,7 @@ class Food(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.driver.find_element_by_id("replyContent").send_keys("自动化test-未上市")
         try:
-            self.driver.find_element_by_xpath('/html/body/div[5]/div/div[2]/div/div[2]/div/p[2]/button[2]').click()
+            self.driver.find_element_by_xpath('/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]').click()
 
         except Exception as error:
             print("拒绝申请发送按钮定位失败：", error)
@@ -271,8 +274,8 @@ class Food(unittest.TestCase):
             print("食材库流程测试完成！")
             print("----------------------------------------------------------------------")
 
-    # @classmethod
-    # def tearDownClass(self) -> None:
-    #     self.driver = webdriver.Chrome()
-    #     self.driver.close()
-    #     print("关闭浏览器")
+    @classmethod
+    def tearDownClass(self) -> None:
+        self.driver = webdriver.Chrome()
+        self.driver.close()
+        print("关闭浏览器")
