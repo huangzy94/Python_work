@@ -210,12 +210,27 @@ class Ingredients(unittest.TestCase):
         food_delete1 = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[4]'
         self.driver.find_element_by_xpath(food_delete1).click()
         sleep(0.5)
-        self.driver.find_element_by_xpath('/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]').click()
+
+    def test_2_delete(self):
+        print("遍历字典找到想要的元素定位")
+        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        lists = {a, b, c, d, e, f}
+        for element in lists:
+            try:
+                self.driver.find_element_by_xpath(element).click()  # 删除 二次确认
+            except Exception as error:
+                if error is None:
+                    print("定位成功")
+                    return element
         sleep(0.5)
+        print("end:辅料库测试流程结束")
 
-        """待审核辅料库"""
-
-    def test_2_to_audit(self):
+    def test_3_to_audit(self):
         """辅料库--待审核辅料库"""
         # 为避免定位到重复的元素，需要重载一下页面
         self.driver.refresh()   # 刷新浏览器，使元素重载
@@ -233,17 +248,23 @@ class Ingredients(unittest.TestCase):
         # 模拟键盘回车添加sku
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys(Keys.ENTER)
         sleep(1)
-        button2 = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        sleep(1)
-        error2 = None
-        try:
-            self.driver.find_element_by_xpath(button2).click()
 
-        except Exception as error:
-            print("待审核辅料选择器保存按钮定位失败：", error)
-            error2 = error
-        if error2 is not None:
-            self.driver.find_element_by_xpath(button2).click()
+    def test_4_save(self):
+        print("遍历字典找到想要的元素定位")
+        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        lists = {a, b, c, d, e, f}
+        for element in lists:
+            try:
+                self.driver.find_element_by_xpath(element).click()  # 食材选择-保存按钮
+            except Exception as error:
+                if error is None:
+                    print("定位成功")
+                    return element
 
         # 拒绝申请
         sleep(1)
@@ -252,15 +273,24 @@ class Ingredients(unittest.TestCase):
         self.driver.implicitly_wait(10)
         self.driver.find_element_by_id("replyContent").send_keys("自动化test-未上市")
         sleep(0.5)
-        try:
-            self.driver.find_element_by_xpath('/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]').click()
-        except Exception as error:
-            print("拒绝申请发送按钮定位失败：", error)
-            sleep(0.5)
-            error2 = error
-        if error2 is not None:
-            self.driver.find_element_by_xpath(button2).click()
-        else:
+
+    def test_5_send(self):
+        print("遍历字典找到想要的元素定位")
+        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        lists = {a, b, c, d, e, f}
+        for element in lists:
+            try:
+                self.driver.find_element_by_xpath(element).click()  # 审核不通过 发送按钮
+            except Exception as error:
+                if error is None:
+                    print("定位成功")
+                    return element
+
             print("辅料库流程测试完成！")
             print("----------------------------------------------------------------------")
 

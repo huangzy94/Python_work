@@ -18,6 +18,7 @@ class Greens(unittest.TestCase):
 
     def test_1_menu(self):
         """新增菜品流程"""
+        print("新增菜品流程")
 
         # 点击食材库模块
         self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[4]/span').click()
@@ -89,7 +90,8 @@ class Greens(unittest.TestCase):
         sleep(0.5)
         # 模拟键盘回车添加sku
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys(Keys.ENTER)
-        self.driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]').click()
+        self.driver.find_element_by_xpath(
+            '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]').click()
         sleep(0.5)
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[3]/div[2]/div/div/div/div/div/div['
                                           '1]/table/tbody/tr[1]/td[3]/input').send_keys("360")
@@ -101,7 +103,8 @@ class Greens(unittest.TestCase):
         self.driver.find_element_by_xpath('//li[contains(text(),"瓶")]').click()
         self.driver.implicitly_wait(10)
         # 定位上传图片按钮
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[4]/div/div/div/span/div[1]/span/div/i').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="root"]/section/main/div/div[4]/div/div/div/span/div[1]/span/div/i').click()
         # 调用AutoIt脚本上传菜品图片
         os.system(r'D:\Python_work\AutoIt_Script\菜品图片.exe')
         sleep(2)
@@ -111,7 +114,8 @@ class Greens(unittest.TestCase):
         # 保存
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[6]/div[2]/button[2]').click()
         sleep(1)
-        message = self.driver.find_element_by_xpath('/html/body/div[2]/div/span/div/div/div/span').get_attribute("textContent")
+        message = self.driver.find_element_by_xpath('/html/body/div[2]/div/span/div/div/div/span').get_attribute(
+            "textContent")
         print(message)
         if message == "图片未上传":
             sleep(1)
@@ -122,6 +126,7 @@ class Greens(unittest.TestCase):
 
     def test_2_list(self):
         """操作栏按钮功能回归"""
+        print("操作栏按钮功能回归")
 
         # 查看已添加的菜品
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div[1]/div/form/div['
@@ -129,13 +134,14 @@ class Greens(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div[1]/div/form/div['
                                           '2]/div/div/span/span/input').send_keys("自动化")
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div[1]/div/form/div['
-                                          '2]/div/div/span/span/span/i') .click()                               # 搜索
+                                          '2]/div/div/span/span/span/i').click()  # 搜索
         sleep(0.5)
         # 查看菜品详情
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div['
                                           '2]/div/div/div/div/div/table/tbody/tr/td[7]/a[1]').click()
         sleep(0.5)
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
         # 编辑菜品
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div['
                                           '2]/div/div/div/div/div/table/tbody/tr/td[7]/a[2]').click()
@@ -150,38 +156,39 @@ class Greens(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div['
                                           '2]/div/div/div/div/div/table/tbody/tr/td[7]/a[3]').click()
         self.driver.implicitly_wait(10)
-        try:
-            # 二次确认
-            self.driver.find_element_by_xpath('button//[@class="ant-btn ant-btn-primary"]/span').click()
-        except Exception as error:
-            print("无法定位确认删除按钮：", error)
+
+    def test_3_delete(self):
+        print("遍历字典找到想要的元素定位")
+        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        lists = {a, b, c, d}
+        for element in lists:
+            try:
+                self.driver.find_element_by_xpath(element).click()        # 删除 二次确认
+            except Exception as error:
+                if error is None:
+                    print("定位成功")
+                    return element
+
         sleep(0.5)
         self.driver.refresh()
         self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[4]/span').click()
         # 全选
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/div['
                                           '2]/div/div/div/div/div/table/thead/tr/th[1]/span/div/span['
-                                          '1]/div/label/span/input') .click()
+                                          '1]/div/label/span/input').click()
         # 定义/取消新品
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/form/div[3]/div/div/span/button').click()
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/form/div[4]/div/div/span/button').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="root"]/section/main/div/div[2]/div/form/div[3]/div/div/span/button').click()
+        self.driver.find_element_by_xpath(
+            '//*[@id="root"]/section/main/div/div[2]/div/form/div[4]/div/div/span/button').click()
 
 
 def tearDownClass(self) -> None:
     self.driver = webdriver.Chrome()
     self.driver.close()
     print("菜品库流程测试结束")
-
-
-def test():
-    a = "/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]"
-    b = "/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]"
-    c = {a, b}
-    for d in c:
-        if d == a:
-            return d
-        elif d == b:
-            return d
-
 
 
