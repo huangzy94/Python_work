@@ -215,13 +215,15 @@ class Ingredients(unittest.TestCase):
     def test_2_delete(self):
         start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        c = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        lists = [a, b, c, d, e, f]
+        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        c = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        d = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        g = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        h = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 删除 二次确认
@@ -237,6 +239,7 @@ class Ingredients(unittest.TestCase):
 
     def test_3_to_audit(self):
         """辅料库--待审核辅料库"""
+        sleep(1)
         # 待审核辅料库
         to_audit1 = '//*[@id="root"]/section/main/div[1]/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]/p'
         self.driver.find_element_by_xpath(to_audit1).click()

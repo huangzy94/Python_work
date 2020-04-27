@@ -88,6 +88,7 @@ class Food(unittest.TestCase):
         category = '//*[@id="root"]/section/main/div/div[2]/div[2]/form/div[1]/div[3]/div/div/div/div[' \
                    '2]/div/span/span/span '
         self.driver.find_element_by_xpath(category).click()
+        sleep(0.5)
         self.driver.find_element_by_xpath('//li[contains(text(),"乳品冷饮")]').click()
         self.driver.find_element_by_xpath('//li[contains(text(),"低温奶")]').click()
         self.driver.find_element_by_xpath('//*[@id="season"]/div/div').click()
@@ -242,6 +243,7 @@ class Food(unittest.TestCase):
 
     def test_3_To_audit(self):
         """食材库--待审核食材库"""
+        sleep(1)
         # 待审核食材库
         to_audit = '//*[@id="root"]/section/main/div[1]/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]'
         self.driver.find_element_by_xpath(to_audit).click()
@@ -264,7 +266,9 @@ class Food(unittest.TestCase):
         d = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        lists = [a, b, c, d, e, f]
+        g = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        h = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 食材选择-保存按钮

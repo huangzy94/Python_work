@@ -2,7 +2,6 @@ from selenium import webdriver
 from OPS.login import Login_first
 from time import *
 import unittest
-import time
 import logging
 import datetime
 
@@ -18,6 +17,7 @@ class Classes(unittest.TestCase):
     def setUpClass(self) -> None:
         t = Login_first("jgzh01", "su123456", "801B", "ops")
         self.driver = t.login()
+        print("类别管理流程测试开始")
 
     def test_1_Food_category(self):
         """食材类别流程"""
@@ -28,7 +28,7 @@ class Classes(unittest.TestCase):
 
     def test_2_confirm(self):
         global x
-        start = time.clock()
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[3]/div/div/div/div[2]/div/p[2]/button[2]'
         b = '/html/body/div[4]/div/div/div/div[2]/div/p[2]/button[2]'
@@ -46,19 +46,22 @@ class Classes(unittest.TestCase):
             else:
                 print("类别添加成功:", element)
                 x = element
-                end = time.clock()
+                end = datetime.datetime.now()
                 print("test_2_confirm 遍历耗时:", str(end - start))
                 return element
         message = self.driver.find_element_by_xpath('/html/body/div[2]/div/span/div/div/div/span').get_attribute(
             'textContent')
         print(message)
+        sleep(0.5)
         if message == "数据校验失败:类别名称已存在.":
             name = "Automated Testing Testing"
-            sleep(0.5)
+            sleep(1)
             self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/form/div['
                                               '1]/div/div/span/button').click()
+            sleep(0.5)
             self.driver.find_element_by_id('catalogName').send_keys(name)
             sleep(0.5)
+            # 确定
             self.driver.find_element_by_xpath(x).click()
         elif message == "未知错误":
             print("新增SKU：", message)
@@ -75,11 +78,13 @@ class Classes(unittest.TestCase):
         sleep(0.5)
         self.driver.find_element_by_xpath(e).click()
         # 添加下级分类
-        sleep(0.1)
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
-                                          '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/a[3]') .click()
+        sleep(1)
+        add = '//*[@id="root"]/section/main/div/div[2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/a[3]'
+        self.driver.find_element_by_xpath(add).click()
+        self.driver.find_element_by_id('catalogName').send_keys("Testing")
         sleep(0.5)
         self.driver.find_element_by_xpath(e).click()
+        print("添加下级分类成功")
         sleep(0.5)
         # 展开下级分类
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
@@ -104,10 +109,10 @@ class Classes(unittest.TestCase):
         a = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         b = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         c = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        d = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         e = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        f = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        g = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        f = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        g = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         lists = [a, b, c, d, e, f, g]
         for button in lists:
             try:
@@ -121,13 +126,8 @@ class Classes(unittest.TestCase):
                 print("test_4_delete 遍历耗时：", str(end - start))
                 return button
 
-        sleep(0.5)
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
-                                          '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/a[2]') .click()
-        b = self.test_4_delete()
-        self.driver.find_element_by_xpath(b).click()
-
     def test_5_ingredients_category(self):
+        sleep(1)
         # 辅料类别
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[1]/div/div[2]/div['
                                           '1]/div/div/div/div/div[1]/div[2]') .click()
@@ -162,6 +162,7 @@ class Classes(unittest.TestCase):
     def tearDownClass(self) -> None:
         self.driver = webdriver.Chrome()
         self.driver.close()
+        print("关闭浏览器")
 
 
 
