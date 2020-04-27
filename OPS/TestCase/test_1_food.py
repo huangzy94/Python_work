@@ -281,15 +281,14 @@ class Food(unittest.TestCase):
                 return element
         sleep(0.5)
 
+    def test_5_send(self):
+        start = datetime.datetime.now()
         # 拒绝申请
         sleep(1)
         refuse = '//*[@id="root"]/section/main/div[2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[7]/a[2]'
         self.driver.find_element_by_xpath(refuse).click()
         self.driver.implicitly_wait(10)
         self.driver.find_element_by_id("replyContent").send_keys("自动化test-未上市")
-
-    def test_5_send(self):
-        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[7]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         b = '/html/body/div[8]/div/div[2]/div/div[2]/div/p[2]/button[2]'

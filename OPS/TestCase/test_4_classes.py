@@ -2,16 +2,13 @@ from selenium import webdriver
 from OPS.login import Login_first
 from time import *
 import unittest
-import logging
 import datetime
-
-LOG_FORMAT = "%(asctime)s - [%(levelname)s] - %(message)s"
-DATE_FORMAT = "%Y/%m/%d %H:%M:%S"
 
 
 class Classes(unittest.TestCase):
-    """类别管理"""
-    logging.basicConfig(filename='../Log/'+__name__+'.log', filemode='a', level=logging.ERROR, format=LOG_FORMAT, datefmt=DATE_FORMAT)
+    """
+    类别管理
+    """
 
     @classmethod  # 使用装饰器使装饰器下的方法仅运行一次
     def setUpClass(self) -> None:
@@ -100,18 +97,18 @@ class Classes(unittest.TestCase):
                                           '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[1]/span[2]/a[1]') .click()
 
     def test_4_delete(self):
-        global e
+        global p
         start = datetime.datetime.now()
         # 删除下级分类
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
                                           '2]/div/div/div/div/div/div/div/table/tbody/tr[2]/td[3]/a[2]') .click()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        b = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        a = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         c = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        d = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         e = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        f = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        f = '/html/body/div[7/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         g = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         lists = [a, b, c, d, e, f, g]
         for button in lists:
@@ -121,10 +118,15 @@ class Classes(unittest.TestCase):
                 print("定位失败", error)
             else:
                 print('下级分类删除成功', button)
-                e = button
+                p = button
                 end = datetime.datetime.now()
                 print("test_4_delete 遍历耗时：", str(end - start))
                 return button
+        sleep(1)
+        # 删除主类
+        self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
+                                          '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/a[2]') .click()
+        self.driver.find_element_by_xpath(p).click()
 
     def test_5_ingredients_category(self):
         sleep(1)
@@ -133,7 +135,7 @@ class Classes(unittest.TestCase):
                                           '1]/div/div/div/div/div[1]/div[2]') .click()
         sleep(0.5)
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/form/div[1]/div/div/span/button').click()
-        self.driver.find_element_by_id('catalogName').send_keys("Automated Testing")
+        self.driver.find_element_by_id('catalogName').send_keys("Testing")
         sleep(0.5)
         button = x
         # 保存主类别
@@ -143,22 +145,26 @@ class Classes(unittest.TestCase):
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
                                           '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/a[1]') .click()
         self.driver.find_element_by_xpath(button).click()
+        sleep(1)
         # 排序
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/form/div['
                                           '2]/div/div/span/div/button') .click()
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
-                                          '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/div/div[2]/input').send_keys("1")
+                                          '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[2]/div/div['
+                                          '2]/input').send_keys("1")
         # 保存
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[2]/div/form/div['
                                           '2]/div/div/span/div/button[1]') .click()
+        sleep(0.5)
         # 删除类别
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div['
                                           '2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[3]/a[2]') .click()
-        delete = e
+        delete = p
         self.driver.find_element_by_xpath(delete).click()
         print("类别管理流程测试完成！")
         print("----------------------------------------------------------------------")
 
+    @classmethod
     def tearDownClass(self) -> None:
         self.driver = webdriver.Chrome()
         self.driver.close()

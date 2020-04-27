@@ -161,10 +161,10 @@ class Greens(unittest.TestCase):
     def test_3_delete(self):
         start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        a = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         b = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         e = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         lists = [a, b, c, d, e, f]

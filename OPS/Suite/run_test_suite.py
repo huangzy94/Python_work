@@ -1,8 +1,11 @@
-
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
 from OPS.Suite.Email.AutoSendEmail import AutoSendEmail
+
+"""
+Created on 2020年4月
+"""
 
 
 class TestRunner:
@@ -42,4 +45,5 @@ if __name__ == '__main__':
     # 通过邮件发送测试报告
     s = AutoSendEmail("18655174391@163.com", "Yu201314", 'smtp.163.com')
     s.Send(filepath)
+
 
