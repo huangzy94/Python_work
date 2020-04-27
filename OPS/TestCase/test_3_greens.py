@@ -2,6 +2,7 @@ from OPS.login import Login_first
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from time import *
+import datetime
 import unittest
 import os
 
@@ -158,19 +159,25 @@ class Greens(unittest.TestCase):
         self.driver.implicitly_wait(10)
 
     def test_3_delete(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        a = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        lists = {a, b, c, d}
+        d = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        e = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()        # 删除 二次确认
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
+                print(error)
+            else:
+                print("菜品删除成功")
+                end = datetime.datetime.now()
+                print("test_3_delete 遍历耗时:", str(end-start))
+                return element
 
         sleep(0.5)
         self.driver.refresh()

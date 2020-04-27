@@ -2,6 +2,7 @@ from OPS.login import Login_first
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from time import *
+import datetime
 import unittest
 import os
 
@@ -151,7 +152,7 @@ class Food(unittest.TestCase):
             self.driver.close()
 
         # 规格信息
-        sleep(0.5)
+        sleep(1)
         add1 = '//*[@id="root"]/section/main/div/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/button'
         try:
             self.driver.find_element_by_xpath(add1).click()
@@ -217,22 +218,25 @@ class Food(unittest.TestCase):
         sleep(0.5)
 
     def test_2_delete(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        c = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        d = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        lists = {a, b, c, d, e, f}
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 删除 二次确认
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
-
+                print(error)
+            else:
+                print("食材删除成功")
+                end = datetime.datetime.now()
+                print("test_2_delete 遍历耗时：", str(end - start))
+                return element
         sleep(0.5)
         print("end:食材库测试流程结束")
 
@@ -252,21 +256,26 @@ class Food(unittest.TestCase):
         sleep(0.5)
 
     def test_4_save(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        c = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        d = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        lists = {a, b, c, d, e, f}
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 食材选择-保存按钮
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
+                print(error)
+            else:
+                print("食材审核通过")
+                end = datetime.datetime.now()
+                print("test_4_save 遍历耗时：", str(end - start))
+                return element
+        sleep(0.5)
 
         # 拒绝申请
         sleep(1)
@@ -276,21 +285,25 @@ class Food(unittest.TestCase):
         self.driver.find_element_by_id("replyContent").send_keys("自动化test-未上市")
 
     def test_5_send(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        a = '/html/body/div[7]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        b = '/html/body/div[8]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         c = '/html/body/div[5]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         d = '/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        lists = {a, b, c, d, e, f}
+        e = '/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        f = '/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # # 审核不通过 发送按钮
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
+                print(error)
+            else:
+                print("食材审核已拒绝")
+                end = datetime.datetime.now()
+                print("test_5_send 遍历耗时：", str(end - start))
+                return element
 
         print("食材库流程测试完成！")
         print("----------------------------------------------------------------------")

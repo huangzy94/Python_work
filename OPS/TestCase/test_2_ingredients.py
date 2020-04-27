@@ -2,6 +2,7 @@ from OPS.login import Login_first
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from time import *
+import datetime
 import unittest
 import os
 
@@ -140,7 +141,7 @@ class Ingredients(unittest.TestCase):
             self.driver.close()
 
         # 规格信息
-        self.driver.implicitly_wait(10)
+        sleep(1)
         add1 = '//*[@id="root"]/section/main/div/div[2]/div[2]/div[2]/div/div/div/div/div/div[3]/button'
         try:
             self.driver.find_element_by_xpath(add1).click()
@@ -212,30 +213,30 @@ class Ingredients(unittest.TestCase):
         sleep(0.5)
 
     def test_2_delete(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        c = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        lists = {a, b, c, d, e, f}
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 删除 二次确认
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
+                print(error)
+            else:
+                print("辅料删除成功")
+                end = datetime.datetime.now()
+                print("test_2_delete 遍历耗时：", str(end-start))
+                return element
         sleep(0.5)
         print("end:辅料库测试流程结束")
 
     def test_3_to_audit(self):
         """辅料库--待审核辅料库"""
-        # 为避免定位到重复的元素，需要重载一下页面
-        self.driver.refresh()   # 刷新浏览器，使元素重载
-        self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[3]/span').click()   # 定位辅料库模块(避免弹窗元素存在重复)
-        sleep(1)
         # 待审核辅料库
         to_audit1 = '//*[@id="root"]/section/main/div[1]/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]/p'
         self.driver.find_element_by_xpath(to_audit1).click()
@@ -250,21 +251,25 @@ class Ingredients(unittest.TestCase):
         sleep(1)
 
     def test_4_save(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        c = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        lists = {a, b, c, d, e, f}
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 食材选择-保存按钮
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
+                print(error)
+            else:
+                end = datetime.datetime.now()
+                print("辅料审核通过")
+                print("test_4_save 遍历耗时：", str(end-start))
+                return element
 
         # 拒绝申请
         sleep(1)
@@ -275,21 +280,25 @@ class Ingredients(unittest.TestCase):
         sleep(0.5)
 
     def test_5_send(self):
+        start = datetime.datetime.now()
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        a = '/html/body/div[5]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         b = '/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        c = '/html/body/div[5]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        c = '/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         d = '/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        lists = {a, b, c, d, e, f}
+        lists = [a, b, c, d, e, f]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 审核不通过 发送按钮
             except Exception as error:
-                if error is None:
-                    print("定位成功")
-                    return element
+                print(error)
+            else:
+                end = datetime.datetime.now()
+                print("辅料审核已拒绝")
+                print("test_4_save 遍历耗时：", str(end - start))
+                return element
 
             print("辅料库流程测试完成！")
             print("----------------------------------------------------------------------")
