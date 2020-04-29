@@ -1,10 +1,13 @@
 from OPS.login import Login_first
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+from OPS.Log.log import PrintLog
 from time import *
 import datetime
 import unittest
 import os
+
+logger = PrintLog()
 
 
 class Ingredients(unittest.TestCase):
@@ -14,21 +17,26 @@ class Ingredients(unittest.TestCase):
         # 调用Login_first类中的登录方法
         t = Login_first("jgzh01", "su123456", "801B", "ops")
         self.driver = t.login()
+        logger.debug("begin辅料库测试流程...")
 
     def test_1_library(self):
         """辅料库"""
+        logger.debug("定位“辅料库”模块")
         # 定位“辅料库”模块
         food = self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[3]/span')
         try:
             food.click()
         except Exception as error:
-            print("定位“辅料”模块fail:", error)
-        self.driver.implicitly_wait(10)  # 隐式等待-等待全局元素加载完成
-        print("second:begin辅料库测试流程...")
-        s = self.driver.title
-        print(s)
+            logger.error("定位“辅料”模块fail:" + error)
+        else:
+            self.driver.implicitly_wait(10)  # 隐式等待-等待全局元素加载完成
+            print("second:begin辅料库测试流程...")
+            s = self.driver.title
+            logger.debug(s)
+            print(s)
 
         # 定位下拉框
+        logger.debug("定位下拉框")
         sleep(1)
         select2 = '//*[@id="root"]/section/main/div[2]/div/div[1]/div[1]/form/div[1]/div[' \
                   '2]/div/span/div/div/div/div/div/div '
@@ -36,26 +44,31 @@ class Ingredients(unittest.TestCase):
         sleep(0.5)
 
         # 使用text()方法定位下拉框的value
+        logger.debug("使用text()方法定位下拉框的value")
         self.driver.find_element_by_xpath('//li[contains(text(),"食用油")]').click()
         sleep(0.5)
 
         # 定位i标签清空图标data-icon="close-circle"
+        logger.debug("定位i标签清空图标data-icon='close-circle'")
         em1 = '//*[@id="root"]/section/main/div[2]/div/div[1]/div[1]/form/div[1]/div[' \
               '2]/div/span/div/div/div/div/span[1]/i '
         self.driver.find_element_by_xpath(em1).click()
         sleep(0.5)
 
         # 定位搜索框并执行搜索
+        logger.debug("定位搜索框并执行搜索")
         food_key1 = '//*[@id="root"]/section/main/div[2]/div/div[1]/div[1]/form/div[2]/div/div/span/span/input'
         self.driver.find_element_by_xpath(food_key1).send_keys("食用小苏打")
         food_search1 = '//*[@id="root"]/section/main/div[2]/div/div[1]/div[1]/form/div[2]/div/div/span/span/span/i'
         self.driver.find_element_by_xpath(food_search1).click()
         sleep(0.5)
         # 清空输入框内容
+        logger.debug("清空输入框内容")
         self.driver.find_element_by_xpath(food_key1).clear()
         self.driver.find_element_by_xpath(food_search1).click()
         sleep(0.5)
 
+        logger.debug("排序")
         # 按辅料名称排序
         a1 = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/thead/tr/th[2]/span/div/span[' \
              '2]/div/i[1] '
@@ -82,6 +95,7 @@ class Ingredients(unittest.TestCase):
         sleep(0.5)
 
         # 新增辅料--基本属性
+        logger.debug("新增辅料--基本属性")
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div[2]/div/div[1]/div[2]/button[2]').click()
         self.driver.implicitly_wait(10)
         user_name = "自动化测试"
@@ -127,6 +141,7 @@ class Ingredients(unittest.TestCase):
         message = self.driver.find_element_by_xpath('/html/body/div[2]/div/span/div/div/div/span').get_attribute(
             'textContent')
         print(message)
+        logger.debug(message)
         if message == "数据校验失败:商品名称已存在.":
             user_name1 = user_name + "1"
             # 滚动到顶部使元素可见
@@ -139,6 +154,8 @@ class Ingredients(unittest.TestCase):
         elif message == "未知错误":
             print("新增SKU：", message)
             self.driver.close()
+            logger.error(message)
+            logger.debug("流程意外终止")
 
         # 规格信息
         sleep(1)
@@ -146,12 +163,15 @@ class Ingredients(unittest.TestCase):
         try:
             self.driver.find_element_by_xpath(add1).click()
         except Exception as error:
-            print("定位规格添加按钮fail", error)
+            logger.error("定位规格添加按钮fail" + error)
+        else:
+            logger.debug("定位规格添加按钮success")
         img_button1 = '//*[@id="root"]/section/main/div/div[2]/div[2]/div[2]/div/div/div/div/div/div[' \
                       '1]/table/tbody/tr/td[' \
                       '4]/span[2]/div[1]/span/button '
         self.driver.find_element_by_xpath(img_button1).click()
         # 调用AutoIt脚本实现文件上传
+        logger.debug("调用AutoIt脚本上传规格图片")
         os.system(r'D:\Python_work\AutoIt_Script\规格图片.exe')
         sleep(2)
         self.driver.find_element_by_xpath('//*[@id="minor-brand"]/div/div/div[1]').click()
@@ -161,11 +181,13 @@ class Ingredients(unittest.TestCase):
         add2 = '//*[@id="root"]/section/main/div/div[2]/div[2]/div[2]/div/div/div/div/div/div[1]/table/tbody/tr/td[' \
                '5]/a[2] '
         self.driver.find_element_by_xpath(add2).click()
+        logger.debug("规格信息保存成功")
         sleep(0.5)
         # 返回
         self.driver.find_element_by_xpath(
             '//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
         # 查看已添加的辅料
+        logger.debug("查看详情")
         self.driver.find_element_by_xpath(food_key1).clear()
         self.driver.find_element_by_xpath(food_key1).send_keys("自动化测试")
         self.driver.find_element_by_xpath(food_search1).click()
@@ -211,9 +233,11 @@ class Ingredients(unittest.TestCase):
         food_delete1 = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[4]'
         self.driver.find_element_by_xpath(food_delete1).click()
         sleep(0.5)
+        logger.debug("删除辅料")
 
     def test_2_delete(self):
         start = datetime.datetime.now()
+        logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
@@ -223,23 +247,26 @@ class Ingredients(unittest.TestCase):
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         g = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         h = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-
         lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 删除 二次确认
             except Exception as error:
                 print(error)
+                logger.error(error)
             else:
                 print("辅料删除成功")
                 end = datetime.datetime.now()
                 print("test_2_delete 遍历耗时：", str(end-start))
+                logger.debug("test_2_delete 遍历耗时：" + str(end-start))
+                logger.warning("test_2_delete 遍历耗时：" + str(end-start))
                 return element
         sleep(0.5)
-        print("end:辅料库测试流程结束")
+        logger.debug("end:辅料库测试流程结束")
 
     def test_3_to_audit(self):
         """辅料库--待审核辅料库"""
+        logger.debug("辅料库--待审核辅料库")
         self.driver.refresh()
         sleep(2)
         # 待审核辅料库
@@ -247,6 +274,7 @@ class Ingredients(unittest.TestCase):
         self.driver.find_element_by_xpath(to_audit1).click()
         sleep(0.5)
         # 通过申请
+        logger.debug("通过申请")
         allow1 = '//*[@id="root"]/section/main/div[2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[7]/a[1]'
         self.driver.find_element_by_xpath(allow1).click()
         sleep(0.5)
@@ -257,6 +285,7 @@ class Ingredients(unittest.TestCase):
 
     def test_4_save(self):
         start = datetime.datetime.now()
+        logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
@@ -269,22 +298,26 @@ class Ingredients(unittest.TestCase):
             try:
                 self.driver.find_element_by_xpath(element).click()  # 食材选择-保存按钮
             except Exception as error:
-                print(error)
+                logger.error(error)
             else:
                 end = datetime.datetime.now()
-                print("辅料审核通过")
+                logger.debug("辅料审核通过")
                 print("test_4_save 遍历耗时：", str(end-start))
+                logger.debug("test_4_save 遍历耗时：" + str(end-start))
+                logger.warning("test_4_save 遍历耗时：" + str(end-start))
                 return element
 
     def test_5_send(self):
         start = datetime.datetime.now()
         # 拒绝申请
+        logger.debug("拒绝申请")
         sleep(1)
         refuse1 = '//*[@id="root"]/section/main/div[2]/div/div/div/div/div/div/div/table/tbody/tr[1]/td[7]/a[2]'
         self.driver.find_element_by_xpath(refuse1).click()
         self.driver.implicitly_wait(10)
         self.driver.find_element_by_id("replyContent").send_keys("自动化test-未上市")
         sleep(0.5)
+        logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         b = '/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]'
@@ -297,21 +330,24 @@ class Ingredients(unittest.TestCase):
             try:
                 self.driver.find_element_by_xpath(element).click()  # 审核不通过 发送按钮
             except Exception as error:
-                print(error)
+                logger.error(error)
             else:
                 end = datetime.datetime.now()
-                print("辅料审核已拒绝")
+                logger.debug("辅料审核已拒绝")
                 print("test_4_save 遍历耗时：", str(end - start))
+                logger.debug("test_4_save 遍历耗时：" + str(end - start))
+                logger.warning("test_4_save 遍历耗时：" + str(end - start))
                 return element
 
             print("辅料库流程测试完成！")
+            logger.debug("辅料库流程测试完成！")
             print("----------------------------------------------------------------------")
 
     @classmethod
     def tearDownClass(self) -> None:
         self.driver = webdriver.Chrome()
         self.driver.close()
-        print("关闭浏览器")
+        logger.debug("关闭浏览器")
 
 
 if __name__ == '__main__':

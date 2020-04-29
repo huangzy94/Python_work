@@ -1,41 +1,98 @@
+import os
+import time
+from logging.handlers import RotatingFileHandler
 import logging
-from logging import handlers
+import inspect
 
 
-class Logger(object):
-    level_relations = {
-        'debug': logging.DEBUG,
-        'info': logging.INFO,
-        'warning': logging.WARNING,
-        'error': logging.ERROR,
-        'crit': logging.CRITICAL
-    }
-    # 日志级别关系映射
+path = os.path.join(r'D:\Python_work\OPS\Log', 'log')               # 拼接路径（r进行反斜杠转义）
+print("log存放路径：", path)
 
-    def __init__(self,
-                 filename,
-                 level='debug',
-                 when='D',          # when=D，新生成的文件名上会带上时间
-                 backCount=3,
-                 fmt='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'):
-        self.logger = logging.getLogger(filename)
-        format_str = logging.Formatter(fmt)                        # 设置日志格式
-        self.logger.setLevel(self.level_relations.get(level))      # 设置日志级别
-        sh = logging.StreamHandler()     # 往屏幕上输出
-        sh.setFormatter(format_str)      # 设置屏幕上显示的格式
-        th = handlers.TimedRotatingFileHandler(filename=filename,
-                                               when=when,
-                                               backupCount=backCount,
-                                               encoding='utf-8')     # 往文件里写入#指定间隔时间自动生成文件的处理器
-        # 实例化TimedRotatingFileHandler
-        # interval是时间间隔，backupCount是备份文件的个数，如果超过这个个数，就会自动删除，when是间隔的时间单位，单位有以下几种：
-        # S 秒
-        # M 分
-        # H 小时、
-        # D 天、
-        # W 每星期（interval==0时代表星期一）
-        # midnight 每天凌晨
-        th.setFormatter(format_str)  # 设置文件里写入的格式
-        self.logger.addHandler(sh)   # 把对象加到logger里
-        self.logger.addHandler(th)
 
+handlers = {logging.DEBUG: os.path.join(path, 'debug.log'),
+
+            logging.INFO: os.path.join(path, 'info.log'),
+
+            logging.WARNING: os.path.join(path, 'warning.log'),
+
+            logging.ERROR: os.path.join(path, 'error.log'),
+            }
+
+
+def createHandlers():
+    log_levels = handlers.keys()
+
+    for level in log_levels:
+        to_path = os.path.abspath(handlers[level])
+        handlers[level] = RotatingFileHandler(to_path, maxBytes=10000, backupCount=2, encoding='utf-8')
+
+
+# 加载模块时创建全局变量
+createHandlers()
+
+# 将日志输出到控制台
+console = logging.StreamHandler()
+console.setLevel(logging.DEBUG)
+formatter = logging.Formatter()
+console.setFormatter(formatter)
+logging.getLogger('').addHandler(console)
+
+
+class PrintLog:
+
+    def printfNow(self):
+        return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
+
+    def __init__(self):
+        self.__loggers = {}
+
+        log_levels = handlers.keys()
+
+        for level in log_levels:
+            logger = logging.getLogger(str(level))
+
+            logger.addHandler(handlers[level])
+
+            logger.setLevel(level)
+
+            self.__loggers.update({level: logger})
+
+    def getLogMessage(self, level, message):
+        frame, filename, lineNo, functionName, code, unknowField = inspect.stack()[2]
+
+        '''日志格式：[时间] [类型] [记录代码] 信息'''
+
+        return "[%s] [%s] [%s - %s - %s] %s" % (self.printfNow(), level, filename, lineNo, functionName, message)
+
+    def info(self, message):
+        message = self.getLogMessage("info", message)
+
+        self.__loggers[logging.INFO].info(message)
+
+    def error(self, message):
+        message = self.getLogMessage("error", message)
+
+        self.__loggers[logging.ERROR].error(message)
+
+    def warning(self, message):
+        message = self.getLogMessage("warning", message)
+
+        self.__loggers[logging.WARNING].warning(message)
+
+    def debug(self, message):
+        message = self.getLogMessage("debug", message)
+
+        self.__loggers[logging.DEBUG].debug(message)
+
+    def critical(self, message):
+        message = self.getLogMessage("critical", message)
+
+        self.__loggers[logging.CRITICAL].critical(message)
+
+
+if __name__ == "__main__":
+    logger = PrintLog()
+    logger.debug("debug")
+    logger.info("info")
+    logger.warning("warning")
+    logger.error("error")

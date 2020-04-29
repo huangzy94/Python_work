@@ -1,10 +1,13 @@
 from OPS.login import Login_first
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+from OPS.Log.log import PrintLog
 from time import *
 import datetime
 import unittest
 import os
+
+logger = PrintLog()  # 实例化日志类
 
 
 class Food(unittest.TestCase):
@@ -13,8 +16,14 @@ class Food(unittest.TestCase):
     @classmethod  # 使用装饰器使装饰器下的方法仅运行一次
     def setUpClass(self) -> None:
         # 调用Login类的登录方法
+        logger.debug("调用Login类的登录方法")
         t = Login_first("jgzh01", "su123456", "801B", "ops")
-        self.driver = t.login()
+        try:
+            self.driver = t.login()
+        except Exception as error:
+            logger.error(error)
+        else:
+            logger.debug("实例化Login类login方法")
 
     def test_1_food(self):
         """食材库"""
@@ -24,8 +33,12 @@ class Food(unittest.TestCase):
             food.click()
         except Exception as error:
             print("定位“食材库”模块fail:", error)
+            logger.error(error)
+        else:
+            logger.debug('已定位到食材库模块')
         self.driver.implicitly_wait(10)  # 隐式等待-等待全局元素加载完成
         print("first:begin食材库测试流程")
+        logger.debug("first:begin食材库测试流程")
 
         # 定位下拉框
         sleep(1)
@@ -79,6 +92,7 @@ class Food(unittest.TestCase):
         self.driver.find_element_by_xpath(c2).click()
 
         # 新增食材--基本属性
+        logger.debug("新增食材")
         user_name = "自动化测试"
         self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div[2]/div/div[1]/div[2]/button[2]').click()
         self.driver.implicitly_wait(10)
@@ -116,15 +130,16 @@ class Food(unittest.TestCase):
         # 滚到底部
         js = "var q=document.documentElement.scrollTop=1800"
         self.driver.execute_script(js)
+        logger.debug("操作滚动条滚动到底部元素位置")
         sleep(1)
         self.driver.find_element_by_id("gai").send_keys(100)
-        # 上传文件可使用send.keys方法，但要注意文件路径需要r进行转义
         upload1 = '//*[@id="root"]/section/main/div/div[6]/div[2]/div[1]/span/div[1]/span/button'
         self.driver.find_element_by_xpath(upload1).click()
         sleep(1)
         # 调用AutoIt脚本实现文件上传
         os.system(r'D:\Python_work\AutoIt_Script\ops食材库优质样例图片.exe')
         sleep(3)
+        logger.debug("调用AutoIt脚本实现文件上传")
         # 滚到底部
         js = "var q=document.documentElement.scrollTop=2000"
         self.driver.execute_script(js)
@@ -148,8 +163,12 @@ class Food(unittest.TestCase):
             self.driver.find_element_by_id('goodsName').clear()
             self.driver.find_element_by_id('goodsName').send_keys(user_name1)
             self.driver.find_element_by_xpath('//*[@id="root"]/section/main/div/div[7]/div[2]/button[3]').click()  # 保存
+            logger.warning("数据校验失败:食材名称已存在.")
+            logger.debug("数据校验失败:食材名称已存在.")
         elif message == "未知错误":
             print("新增SKU:", message)
+            logger.error(message)
+            logger.debug("流程意外终止")
             self.driver.close()
 
         # 规格信息
@@ -159,12 +178,16 @@ class Food(unittest.TestCase):
             self.driver.find_element_by_xpath(add1).click()
         except Exception as error:
             print("定位规格添加按钮fail", error)
+            logger.error(error)
+        else:
+            logger.debug("规格添加按钮定位成功")
         img_button = '//*[@id="root"]/section/main/div/div[2]/div[2]/div[2]/div/div/div/div/div/div[' \
                      '1]/table/tbody/tr/td[' \
                      '1]/span[2]/div[1]/span/button '
         self.driver.find_element_by_xpath(img_button).click()
         # 调用AutoIt脚本实现文件上传
         os.system(r'D:\Python_work\AutoIt_Script\规格图片.exe')
+        logger.debug("调用AutoIt脚本上传规格图片")
         sleep(2)
         add2 = '//*[@id="root"]/section/main/div/div[2]/div[2]/div[2]/div/div/div/div/div/div[1]/table/tbody/tr/td[' \
                '2]/a[2] '
@@ -172,6 +195,7 @@ class Food(unittest.TestCase):
         # 返回
         self.driver.find_element_by_xpath(
             '//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
+        logger.debug("操作栏功能按钮回归")
         # 查看已添加的食材
         self.driver.find_element_by_xpath(food_key).clear()
         self.driver.find_element_by_xpath(food_key).send_keys("自动化测试")
@@ -204,7 +228,7 @@ class Food(unittest.TestCase):
         # 食材详情
         food_details = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[2]'
         self.driver.find_element_by_xpath(food_details).click()
-        sleep(0.5)
+        sleep(1)
         self.driver.find_element_by_xpath(
             '//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
 
@@ -217,9 +241,11 @@ class Food(unittest.TestCase):
         food_delete = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[4]'
         self.driver.find_element_by_xpath(food_delete).click()
         sleep(0.5)
+        logger.debug("操作栏功能按钮测试完成")
 
     def test_2_delete(self):
         start = datetime.datetime.now()
+        logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
@@ -235,14 +261,19 @@ class Food(unittest.TestCase):
                 print(error)
             else:
                 print("食材删除成功")
+                logger.debug("食材删除成功")
                 end = datetime.datetime.now()
                 print("test_2_delete 遍历耗时：", str(end - start))
+                logger.debug("test_2_delete 遍历耗时："+str(end - start))
+                logger.warning("test_2_delete 遍历耗时："+str(end - start))
                 return element
         sleep(0.5)
         print("end:食材库测试流程结束")
+        logger.debug("end:食材库测试流程结束")
 
     def test_3_To_audit(self):
         """食材库--待审核食材库"""
+        logger.debug("食材库--待审核食材库")
         sleep(1)
         # 待审核食材库
         to_audit = '//*[@id="root"]/section/main/div[1]/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]'
@@ -253,12 +284,14 @@ class Food(unittest.TestCase):
         self.driver.find_element_by_xpath(allow).click()
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys("饼干")
         sleep(0.5)
+        logger.debug("通过申请")
         # 模拟键盘回车添加sku
         self.driver.find_element_by_xpath('//*[@id="keywords"]/div/div/ul/li/div/input').send_keys(Keys.ENTER)
         sleep(0.5)
 
     def test_4_save(self):
         start = datetime.datetime.now()
+        logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
@@ -274,10 +307,14 @@ class Food(unittest.TestCase):
                 self.driver.find_element_by_xpath(element).click()  # 食材选择-保存按钮
             except Exception as error:
                 print(error)
+                logger.error(error)
             else:
                 print("食材审核通过")
+                logger.debug("食材审核通过")
                 end = datetime.datetime.now()
                 print("test_4_save 遍历耗时：", str(end - start))
+                logger.debug("test_2_delete 遍历耗时："+str(end - start))
+                logger.warning("test_2_delete 遍历耗时："+str(end - start))
                 return element
         sleep(0.5)
 
@@ -302,13 +339,17 @@ class Food(unittest.TestCase):
                 self.driver.find_element_by_xpath(element).click()  # # 审核不通过 发送按钮
             except Exception as error:
                 print(error)
+                logger.error(error)
             else:
                 print("食材审核已拒绝")
                 end = datetime.datetime.now()
                 print("test_5_send 遍历耗时：", str(end - start))
+                logger.debug("test_2_delete 遍历耗时："+str(end - start))
+                logger.warning("test_2_delete 遍历耗时："+str(end - start))
                 return element
 
         print("食材库流程测试完成！")
+        logger.debug("食材库流程测试完成！")
         print("----------------------------------------------------------------------")
 
     @classmethod
@@ -316,3 +357,4 @@ class Food(unittest.TestCase):
         self.driver = webdriver.Chrome()
         self.driver.close()
         print("关闭浏览器")
+        logger.debug("关闭浏览器")

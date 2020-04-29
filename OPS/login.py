@@ -1,4 +1,5 @@
 from selenium import webdriver
+from OPS.Log.log import PrintLog
 from time import *
 import selenium
 
@@ -41,8 +42,10 @@ class Login_first:
         # driver = webdriver.Chrome("C:\\Users\\hzy\\AppData\\Local\\Google\\Chrome\\Application\\chromedriver.exe")
         driver.get(url)
         print("当前访问地址为：%r" % url)
+        logger = PrintLog()
         # 使窗口最大化
         driver.maximize_window()
+        logger.debug("当前访问地址为：%r" % url)
         return driver
 
     # 定义登录方法
