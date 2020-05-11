@@ -18,12 +18,8 @@ class Food(unittest.TestCase):
         # 调用Login类的登录方法
         logger.debug("调用Login类的登录方法")
         t = Login_first("jgzh01", "su123456", "801B", "ops")
-        try:
-            self.driver = t.login()
-        except Exception as error:
-            logger.error(error)
-        else:
-            logger.debug("实例化Login类login方法")
+        self.driver = t.login()
+        logger.debug("实例化Login类login方法")
 
     def test_1_food(self):
         """食材库"""
