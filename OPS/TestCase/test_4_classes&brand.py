@@ -22,6 +22,7 @@ class Classes(unittest.TestCase):
 
     def test_1_Food_category(self):
         """食材类别流程"""
+        sleep(2)
         self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[6]/span').click()  # 类别管理模块
         self.driver.find_element_by_xpath(
             '//*[@id="root"]/section/main/div/div[2]/div/form/div[1]/div/div/span/button').click()

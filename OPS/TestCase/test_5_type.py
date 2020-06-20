@@ -21,6 +21,7 @@ class Brand(unittest.TestCase):
         """
         点击票证类型模块
         """
+        sleep(2)
         self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[8]/span').click()
         sleep(0.5)
         # 新增

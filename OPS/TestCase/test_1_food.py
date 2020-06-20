@@ -1,5 +1,6 @@
 from OPS.login import Login_first
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 from selenium import webdriver
 from OPS.Log.log import PrintLog
 from time import *
@@ -23,18 +24,19 @@ class Food(unittest.TestCase):
 
     def test_1_food(self):
         """食材库"""
+        sleep(2)
         # 定位“食材库”模块
-        food = self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[2]/span')
-        try:
-            food.click()
-        except Exception as error:
-            print("定位“食材库”模块fail:", error)
-            logger.error(error)
-        else:
-            logger.debug('已定位到食材库模块')
+        self.driver.find_element(By.XPATH, '//*[@id="root"]/section/aside/div/a[2]/span').click()
+        # try:
+        #     food.click()
+        # except Exception as error:
+        #     print("定位“食材库”模块fail:", error)
+        #     logger.error(error)
+        # else:
+        #     logger.debug('已定位到食材库模块')
         self.driver.implicitly_wait(10)  # 隐式等待-等待全局元素加载完成
-        print("first:begin食材库测试流程")
-        logger.debug("first:begin食材库测试流程")
+        # print("first:begin食材库测试流程")
+        # logger.debug("first:begin食材库测试流程")
 
         # 定位下拉框
         sleep(1)

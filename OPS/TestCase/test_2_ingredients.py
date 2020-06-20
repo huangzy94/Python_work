@@ -22,6 +22,7 @@ class Ingredients(unittest.TestCase):
     def test_1_library(self):
         """辅料库"""
         logger.debug("定位“辅料库”模块")
+        sleep(2)
         # 定位“辅料库”模块
         food = self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[3]/span')
         try:

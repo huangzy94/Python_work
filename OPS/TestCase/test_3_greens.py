@@ -24,7 +24,7 @@ class Greens(unittest.TestCase):
     def test_1_menu(self):
         """新增菜品流程"""
         logger.debug("新增菜品流程")
-
+        sleep(2)
         # 点击食材库模块
         logger.debug("点击食材库模块")
         self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[4]/span').click()
