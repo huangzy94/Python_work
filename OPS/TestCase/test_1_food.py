@@ -346,9 +346,9 @@ class Food(unittest.TestCase):
                 logger.warning("test_2_delete 遍历耗时："+str(end - start))
                 return element
 
-        print("食材库流程测试完成！")
-        logger.debug("食材库流程测试完成！")
-        print("----------------------------------------------------------------------")
+            print("食材库流程测试完成！")
+            logger.debug("食材库流程测试完成！")
+            print("----------------------------------------------------------------------")
 
     @classmethod
     def tearDownClass(self) -> None:

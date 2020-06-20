@@ -1,14 +1,10 @@
-[2020-06-20 10:25:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 181 - test_1_food] 规格添加按钮定位成功
-[2020-06-20 10:25:42] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 188 - test_1_food] 调用AutoIt脚本上传规格图片
-[2020-06-20 10:25:44] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 196 - test_1_food] 操作栏功能按钮回归
-[2020-06-20 10:25:49] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 242 - test_1_food] 操作栏功能按钮测试完成
-[2020-06-20 10:25:49] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 246 - test_2_delete] 遍历字典找到想要的元素定位
-[2020-06-20 10:25:49] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 262 - test_2_delete] 食材删除成功
-[2020-06-20 10:25:49] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 265 - test_2_delete] test_2_delete 遍历耗时：0:00:00.053402
-[2020-06-20 10:25:49] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 274 - test_3_To_audit] 食材库--待审核食材库
-[2020-06-20 10:25:52] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 285 - test_3_To_audit] 通过申请
-[2020-06-20 10:25:53] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 292 - test_4_save] 遍历字典找到想要的元素定位
-[2020-06-20 10:25:53] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 311 - test_4_save] 食材审核通过
-[2020-06-20 10:25:53] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 314 - test_4_save] test_2_delete 遍历耗时：0:00:00.075801
-[2020-06-20 10:25:54] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 345 - test_5_send] test_2_delete 遍历耗时：0:00:01.289264
-[2020-06-20 10:26:00] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 358 - tearDownClass] 关闭浏览器
+[2020-06-20 16:50:17] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 47 - test_2_add] 遍历字典找到想要的元素定位
+[2020-06-20 16:50:17] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 68 - test_2_add] test_2_add 遍历耗时：0:00:00.083781
+[2020-06-20 16:50:21] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 86 - test_3_relevance] 遍历字典找到想要的元素定位
+[2020-06-20 16:50:21] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 109 - test_3_relevance] test_2_add 遍历耗时：0:00:00.101378
+[2020-06-20 16:50:21] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 115 - test_4_confirm] 遍历字典找到想要的元素定位
+[2020-06-20 16:50:21] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 136 - test_4_confirm] test_2_add 遍历耗时：0:00:00.092746
+[2020-06-20 16:50:24] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 156 - test_6_delete] 遍历字典找到想要的元素定位
+[2020-06-20 16:50:24] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 182 - test_6_delete] 票证类型流程测试完成！
+[2020-06-20 16:50:24] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 177 - test_6_delete] test_2_add 遍历耗时：0:00:00.064826
+[2020-06-20 16:50:30] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 189 - tearDownClass] 关闭浏览器
