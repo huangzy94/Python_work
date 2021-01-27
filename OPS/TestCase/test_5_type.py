@@ -1,11 +1,11 @@
 from OPS.login import Login_first
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from OPS.Log.log import PrintLog
 from selenium import webdriver
 from time import *
 import datetime
 import os
-from OPS.Log.log import PrintLog
 import unittest
 
 logger = PrintLog()

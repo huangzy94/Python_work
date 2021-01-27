@@ -16,7 +16,7 @@ class AutoSendEmail:
     def Send(self, filepath):
         t = AutoSendEmail.SMTP(self)
         now = time.strftime("%Y-%m-%d %H")
-        subject = 'OPS-UI 自动化测试报告'
+        subject = 'OPSS-UI 自动化测试报告'
         contents = [now, 'This is UI Automated test report', "安品-运维中心"]
 
         t.send(to="huangzy94@dingtalk.com",  # 接收人，如果是多个收件人的话，写成list

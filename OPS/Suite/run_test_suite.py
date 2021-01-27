@@ -1,8 +1,9 @@
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
-from OPS.Suite.Email.AutoSendEmail import AutoSendEmail
 from OPS.Log.log import PrintLog
+from OPS.Suite.Email.AutoSendEmail import AutoSendEmail
+
 
 """
 Created on 2020年4月

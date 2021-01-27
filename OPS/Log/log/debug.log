@@ -1,16 +1,36 @@
-[2021-01-27 10:30:31] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 180 - test_1_food] 调用AutoIt脚本上传规格图片
-[2021-01-27 10:30:33] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 188 - test_1_food] 操作栏功能按钮回归
-[2021-01-27 10:30:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 226 - test_1_food] 操作栏功能按钮测试完成
-[2021-01-27 10:30:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 230 - test_2_delete] 遍历字典找到想要的元素定位
-[2021-01-27 10:30:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 249 - test_2_delete] 食材删除成功,定位元素为：/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]
-[2021-01-27 10:30:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 252 - test_2_delete] test_2_delete 遍历耗时：0:00:00.041610
-[2021-01-27 10:30:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 255 - test_2_delete] end:食材库测试流程结束
-[2021-01-27 10:30:39] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 260 - test_3_To_audit] 食材库--待审核食材库
-[2021-01-27 10:30:42] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 271 - test_3_To_audit] 通过申请
-[2021-01-27 10:30:43] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 278 - test_4_save] 遍历字典找到想要的元素定位
-[2021-01-27 10:30:43] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 297 - test_4_save] 食材审核通过,定位元素为：/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]
-[2021-01-27 10:30:43] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 300 - test_4_save] test_2_delete 遍历耗时：0:00:00.136624
-[2021-01-27 10:30:45] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 333 - test_5_send] test_2_delete 遍历耗时：0:00:01.279283
-[2021-01-27 10:30:45] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 336 - test_5_send] 食材库流程测试完成！
-[2021-01-27 10:30:46] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 345 - tearDownClass] 关闭浏览器
-[2021-01-27 10:33:18] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 20 - setUpClass] 调用Login类的登录方法
+[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 136 - test_4_add2] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div/div/ul/li[5]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 136 - test_4_add2] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/div/ul/li[5]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 138 - test_4_add2] 当前定位的元素为：/html/body/div[7]/div/div/ul/li[5]/a
+[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 142 - test_4_add2] test_4_add2 遍历耗时：0:00:00.101304
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 154 - test_5_delete] 遍历字典找到想要的元素定位
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div/ul/li[2]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div/ul/li[2]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/ul/li[2]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div/div/ul/li[2]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/div/ul/li[2]/a"}
+  (Session info: chrome=88.0.4324.104)
+
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 172 - test_5_delete] 当前定位的元素为：/html/body/div[7]/div/div/ul/li[2]/a
+[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 177 - test_5_delete] test_5_delete 遍历耗时：0:00:00.103684
+[2021-01-27 15:40:50] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 185 - test_6_ensure] 遍历字典找到想要的元素定位
+[2021-01-27 15:40:50] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 206 - test_6_ensure] test_6_ensure 遍历耗时：0:00:00.110647
+[2021-01-27 15:40:50] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 208 - test_6_ensure] 餐饮单位流程结束----------------------------------------------------------------------
+[2021-01-27 15:40:52] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 237 - test_6_ensure] test_6_ensure2 遍历耗时：0:00:02.033404
+[2021-01-27 15:40:52] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 239 - test_6_ensure] 餐饮管理单位流程结束----------------------------------------------------------------------
+[2021-01-27 15:40:52] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 241 - test_6_ensure] 添加供货商流程开始----------------------------------------------------------------------
+[2021-01-27 15:40:57] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 287 - test_6_ensure] test_6_ensure3 遍历耗时：0:00:06.849828
+[2021-01-27 15:40:57] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 289 - test_6_ensure] 供货商流程结束----------------------------------------------------------------------
+[2021-01-27 15:40:57] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 55 - <module>] 测试报告已生成,本地存放路径：D:\Python_work\OPS\Suite\Report
+[2021-01-27 15:40:58] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 59 - <module>] 已发送测试报告
