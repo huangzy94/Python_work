@@ -21,7 +21,7 @@ class Login_first:
     # 定义地址的方法
     def URL(self):
         ops = "http://ap-ops.td.com"
-        catering = "http://ap-catering.td.com"
+        catering = "http://ap-catering-v2.td.com"
         superior = "http://ap-superior.td.com"
         supplier = "http://ap-supplier.td.com"
 

@@ -27,16 +27,7 @@ class Food(unittest.TestCase):
         sleep(2)
         # 定位“食材库”模块
         self.driver.find_element(By.XPATH, '//*[@id="root"]/section/aside/div/a[2]/span').click()
-        # try:
-        #     food.click()
-        # except Exception as error:
-        #     print("定位“食材库”模块fail:", error)
-        #     logger.error(error)
-        # else:
-        #     logger.debug('已定位到食材库模块')
         self.driver.implicitly_wait(10)  # 隐式等待-等待全局元素加载完成
-        # print("first:begin食材库测试流程")
-        # logger.debug("first:begin食材库测试流程")
 
         # 定位下拉框
         sleep(1)
@@ -45,8 +36,8 @@ class Food(unittest.TestCase):
         sleep(0.5)
 
         # 使用text()方法定位到第一个下拉框的value
-        self.driver.find_element_by_xpath('//li[contains(text(),"肉类")]').click()
-        self.driver.find_element_by_xpath('//li[contains(text(),"后腿肉")]').click()
+        self.driver.find_element_by_xpath('//li[contains(text(),"猪牛羊肉")]').click()
+        self.driver.find_element_by_xpath('//li[contains(text(),"猪肉")]').click()
         sleep(1)
 
         # 定位i标签清空图标data-icon="close-circle"
@@ -184,6 +175,7 @@ class Food(unittest.TestCase):
                      '1]/span[2]/div[1]/span/button '
         self.driver.find_element_by_xpath(img_button).click()
         # 调用AutoIt脚本实现文件上传
+        sleep(2)
         os.system(r'D:\Python_work\AutoIt_Script\规格图片.exe')
         logger.debug("调用AutoIt脚本上传规格图片")
         sleep(2)
@@ -218,10 +210,6 @@ class Food(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
 
-        # 关键字搜索
-        self.driver.find_element_by_xpath(food_key).clear()
-        self.driver.find_element_by_xpath(food_key).send_keys("自动化测试")
-        self.driver.find_element_by_xpath(food_search).click()
         sleep(0.5)
         # 食材详情
         food_details = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[2]'
@@ -230,12 +218,8 @@ class Food(unittest.TestCase):
         self.driver.find_element_by_xpath(
             '//*[@id="root"]/section/main/div/div[1]/div/div/div[2]/div/div[1]/div/button').click()
 
-        # 关键字搜索
-        self.driver.find_element_by_xpath(food_key).clear()
-        self.driver.find_element_by_xpath(food_key).send_keys("自动化测试")
-        self.driver.find_element_by_xpath(food_search).click()
         sleep(0.5)
-        # 删除食材
+        # 删除食材（删除按钮）
         food_delete = '//*[@id="root"]/section/main/div[2]/div/div[2]/div/div/div/div/div/table/tbody/tr[1]/td[6]/a[4]'
         self.driver.find_element_by_xpath(food_delete).click()
         sleep(0.5)
@@ -243,36 +227,38 @@ class Food(unittest.TestCase):
 
     def test_2_delete(self):
         start = datetime.datetime.now()
-        logger.debug("遍历字典找到想要的元素定位")
+        logger.debug("遍历字典找到想要的元素定位")       # 当元素无唯一属性且动态变化时，遍历变化的区间
         print("遍历字典找到想要的元素定位")
         a = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        b = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         c = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        d = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        lists = [a, b, c, d, e, f]
+        d = '/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        e = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        f = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        g = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        h = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # 删除 二次确认
             except Exception as error:
                 print(error)
+                logger.error(error)
             else:
-                print("食材删除成功")
-                logger.debug("食材删除成功")
+                print("食材删除成功,定位元素为：" + element)
+                logger.debug("食材删除成功,定位元素为：" + element)
                 end = datetime.datetime.now()
                 print("test_2_delete 遍历耗时：", str(end - start))
                 logger.debug("test_2_delete 遍历耗时："+str(end - start))
                 logger.warning("test_2_delete 遍历耗时："+str(end - start))
+                print("end:食材库测试流程结束")
+                logger.debug("end:食材库测试流程结束")
                 return element
-        sleep(0.5)
-        print("end:食材库测试流程结束")
-        logger.debug("end:食材库测试流程结束")
 
     def test_3_To_audit(self):
         """食材库--待审核食材库"""
         logger.debug("食材库--待审核食材库")
-        sleep(1)
+        sleep(1.5)
         # 待审核食材库
         to_audit = '//*[@id="root"]/section/main/div[1]/div/div[2]/div[1]/div/div/div/div/div[1]/div[2]'
         self.driver.find_element_by_xpath(to_audit).click()
@@ -298,7 +284,7 @@ class Food(unittest.TestCase):
         e = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         g = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
-        h = '/html/body/div[10]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
+        h = '/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/div[2]/button[2]'
         lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
@@ -307,16 +293,16 @@ class Food(unittest.TestCase):
                 print(error)
                 logger.error(error)
             else:
-                print("食材审核通过")
-                logger.debug("食材审核通过")
+                print("食材审核通过,定位元素为：" + element)
+                logger.debug("食材审核通过,定位元素为：" + element)
                 end = datetime.datetime.now()
                 print("test_4_save 遍历耗时：", str(end - start))
                 logger.debug("test_2_delete 遍历耗时："+str(end - start))
                 logger.warning("test_2_delete 遍历耗时："+str(end - start))
                 return element
-        sleep(0.5)
 
     def test_5_send(self):
+        sleep(0.5)
         start = datetime.datetime.now()
         # 拒绝申请
         sleep(1)
@@ -331,7 +317,9 @@ class Food(unittest.TestCase):
         d = '/html/body/div[6]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         e = '/html/body/div[4]/div/div[2]/div/div[2]/div/p[2]/button[2]'
         f = '/html/body/div[3]/div/div[2]/div/div[2]/div/p[2]/button[2]'
-        lists = [a, b, c, d, e, f]
+        g = '/html/body/div[2]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        h = '/html/body/div[9]/div/div[2]/div/div[2]/div/p[2]/button[2]'
+        lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()  # # 审核不通过 发送按钮
@@ -339,16 +327,15 @@ class Food(unittest.TestCase):
                 print(error)
                 logger.error(error)
             else:
-                print("食材审核已拒绝")
+                print("食材审核已拒绝,定位元素为：" + element)
                 end = datetime.datetime.now()
                 print("test_5_send 遍历耗时：", str(end - start))
                 logger.debug("test_2_delete 遍历耗时："+str(end - start))
                 logger.warning("test_2_delete 遍历耗时："+str(end - start))
+                print("食材库流程测试完成！")
+                logger.debug("食材库流程测试完成！")
+                print("----------------------------------------------------------------------")
                 return element
-
-            print("食材库流程测试完成！")
-            logger.debug("食材库流程测试完成！")
-            print("----------------------------------------------------------------------")
 
     @classmethod
     def tearDownClass(self) -> None:

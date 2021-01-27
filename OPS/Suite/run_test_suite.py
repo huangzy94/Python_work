@@ -35,6 +35,7 @@ class TestRunner:
 
 
 if __name__ == '__main__':
+    # %Y-%m-%d %H_%M_%S
     now = time.strftime("%Y-%m-%d %H_%M_%S")
     print(now)
     # 打印日志
@@ -50,9 +51,9 @@ if __name__ == '__main__':
     runner1 = TestRunner(r, 2, "UI自动化测试报告", "安品-运维中心", "HZY")
     runner1.discover()
     r.close()
-    logger.debug("测试报告已生成")
+    logger.debug("测试报告已生成,本地存放路径：" + r'D:\Python_work\OPS\Suite\Report')
     # 通过邮件发送测试报告
-    s = AutoSendEmail("18655174391@163.com", "Yu201314", 'smtp.163.com')
+    s = AutoSendEmail("13683339705@163.com", "WTXRICRWULNRZYZG", 'smtp.163.com')
     s.Send(filepath)
     logger.debug("已发送测试报告")
 

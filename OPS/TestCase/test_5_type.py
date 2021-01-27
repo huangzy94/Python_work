@@ -42,7 +42,7 @@ class Brand(unittest.TestCase):
 
         # 确认新增
     def test_2_add(self):
-        global a
+        global ad
         start = datetime.datetime.now()
         logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
@@ -61,16 +61,16 @@ class Brand(unittest.TestCase):
             except Exception as error:
                 logger.error(error)
             else:
-                a = add
+                ad = add
                 print("票证添加成功")
                 end = datetime.datetime.now()
                 print("test_2_add 遍历耗时：", str(end-start))
                 logger.debug("test_2_add 遍历耗时：" + str(end-start))
                 logger.warning("test_2_add 遍历耗时：" + str(end-start))
-                return add
+                return ad
 
     def test_3_relevance(self):
-        sleep(1)
+        sleep(2)
         # 关联商品
         self.driver.find_element(By.XPATH, '//*[@id="root"]/section/main/div/div/div['
                                            '2]/div/div/div/div/div/table/tbody/tr[1]/td[4]/a[1]').click()
@@ -142,8 +142,10 @@ class Brand(unittest.TestCase):
         # 编辑
         self.driver.find_element(By.XPATH, '//*[@id="root"]/section/main/div/div/div['
                                            '2]/div/div/div/div/div/table/tbody/tr[1]/td[4]/a[2]') .click()
+        sleep(1)
         # 调用test_2_add函数的返回值 a
-        self.driver.find_element(By.XPATH, a).click()
+        delete = ad
+        self.driver.find_element(By.XPATH, delete).click()
         sleep(1)
         # 删除
         self.driver.find_element(By.XPATH, '//*[@id="root"]/section/main/div/div/div['

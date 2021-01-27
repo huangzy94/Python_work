@@ -115,6 +115,7 @@ class Greens(unittest.TestCase):
             '//*[@id="root"]/section/main/div/div[4]/div/div/div/span/div[1]/span/div/i').click()
         # 调用AutoIt脚本上传菜品图片
         logger.debug("调用AutoIt脚本上传菜品图片")
+        sleep(2)
         os.system(r'D:\Python_work\AutoIt_Script\菜品图片.exe')
         sleep(2)
         # 烧制方法
@@ -178,13 +179,15 @@ class Greens(unittest.TestCase):
         start = datetime.datetime.now()
         logger.debug("遍历字典找到想要的元素定位")
         print("遍历字典找到想要的元素定位")
-        a = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        b = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        a = '/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        b = '/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         c = '/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         d = '/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         e = '/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
         f = '/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
-        lists = [a, b, c, d, e, f]
+        g = '/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        h = '/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]'
+        lists = [a, b, c, d, e, f, g, h]
         for element in lists:
             try:
                 self.driver.find_element_by_xpath(element).click()        # 删除 二次确认
@@ -201,7 +204,12 @@ class Greens(unittest.TestCase):
                 return element
 
         sleep(0.5)
-        self.driver.refresh()
+        search = '//*[@id="root"]/section/main/div/div[2]/div/div[1]/div/form/div[2]/div/div/span/span/input'
+        clear = '//*[@id="root"]/section/main/div/div[2]/div/div[1]/div/form/div[2]/div/div/span/span/span/i/svg'
+        # 清空搜索框内容
+        self.driver.find_element_by_xpath(search).clear()
+        # 搜索框为空时搜索
+        self.driver.find_element_by_xpath(clear).click()
         self.driver.find_element_by_xpath('//*[@id="root"]/section/aside/div/a[4]/span').click()
         # 全选
         logger.debug("全选")

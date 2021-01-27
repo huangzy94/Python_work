@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba7c18c2-66d4-4485-b79e-892b8a3c227c" name="Default Changelist" comment="">
+    <list default="true" id="ba7c18c2-66d4-4485-b79e-892b8a3c227c" name="Default Changelist" comment="Readme">
+      <change afterPath="$PROJECT_DIR$/OPS/TestCase/test_6_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AutoIt_Script/Script.au3" beforeDir="false" afterPath="$PROJECT_DIR$/AutoIt_Script/Script.au3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OPS/Log/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OPS/Log/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OPS/Log/log/warning.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/warning.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/Suite/Email/AutoSendEmail.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Suite/Email/AutoSendEmail.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/Suite/run_test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Suite/run_test_suite.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_1_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_1_food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_4_classes&amp;brand.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_4_classes&amp;brand.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_2_ingredients.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_2_ingredients.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_3_greens.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_3_greens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_4_classes&amp;brand.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_4_classes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_5_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_5_type.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +69,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/fsse-examination-applet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,7 +87,7 @@
       <recent name="D:\Python_work\OPS\TsesCase" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_5_type.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_1_food.py">
     <configuration name="Unittests for test_1_food.Food" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Python_work" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -128,7 +133,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_4_classes&amp;brand.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_2_ingredients.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Python_work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -139,11 +144,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/OPS/TestCase/test_4_classes\u0026brand.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/OPS/TestCase/test_2_ingredients.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_5_type.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_6_user.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Python_work" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -154,23 +159,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/OPS/TestCase/test_5_type.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/OPS/TestCase/test_6_user.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests in test_1_food.py" />
       <item itemvalue="Python tests.Unittests for test_1_food.Food.test_1_food" />
+      <item itemvalue="Python tests.Unittests in test_2_ingredients.py" />
+      <item itemvalue="Python tests.Unittests in test_6_user.py" />
       <item itemvalue="Python tests.Unittests for test_1_food.Food" />
-      <item itemvalue="Python tests.Unittests in test_4_classes&amp;brand.py" />
-      <item itemvalue="Python tests.Unittests in test_5_type.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_5_type.py" />
-        <item itemvalue="Python tests.Unittests in test_4_classes&amp;brand.py" />
-        <item itemvalue="Python tests.Unittests for test_1_food.Food" />
         <item itemvalue="Python tests.Unittests in test_1_food.py" />
+        <item itemvalue="Python tests.Unittests for test_1_food.Food" />
+        <item itemvalue="Python tests.Unittests in test_6_user.py" />
+        <item itemvalue="Python tests.Unittests in test_2_ingredients.py" />
         <item itemvalue="Python tests.Unittests for test_1_food.Food.test_1_food" />
       </list>
     </recent_temporary>
@@ -247,7 +252,21 @@
       <workItem from="1591322613780" duration="194000" />
       <workItem from="1591595856007" duration="3667000" />
       <workItem from="1591968872203" duration="2436000" />
-      <workItem from="1592614714101" duration="15776000" />
+      <workItem from="1592614714101" duration="16436000" />
+      <workItem from="1593776549998" duration="25000" />
+      <workItem from="1595400081756" duration="845000" />
+      <workItem from="1595401094125" duration="724000" />
+      <workItem from="1599720709403" duration="7996000" />
+      <workItem from="1600242143669" duration="7629000" />
+      <workItem from="1604560060326" duration="148000" />
+      <workItem from="1604560432591" duration="44000" />
+      <workItem from="1604560516769" duration="14000" />
+      <workItem from="1604560646712" duration="159000" />
+      <workItem from="1606371825110" duration="37000" />
+      <workItem from="1606371912719" duration="7000" />
+      <workItem from="1606371970950" duration="261000" />
+      <workItem from="1611221957992" duration="15889000" />
+      <workItem from="1611535953328" duration="46694000" />
     </task>
     <task id="LOCAL-00001" summary="。。">
       <created>1586239216015</created>
@@ -333,7 +352,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592620755422</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="新增“票证类型”模块脚本">
+      <created>1592643353898</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592643353898</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Readme">
+      <created>1595401135528</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1595401135528</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,167 +403,113 @@
     <MESSAGE value="Add the log" />
     <MESSAGE value="update" />
     <MESSAGE value="修复因休眠时间导致无法定位元素的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复因休眠时间导致无法定位元素的问题" />
+    <MESSAGE value="新增“票证类型”模块脚本" />
+    <MESSAGE value="Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2232" y="90" key="#Notifications" timestamp="1587535332241">
+    <state x="2336" y="48" key="#Unittests_for_test_4_classes&amp;brand.Classes" timestamp="1611653880702">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2232" y="90" key="#Notifications/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587535332241" />
-    <state x="2336" y="48" key="#Unittests_for_test_4_classes&amp;brand.Classes" timestamp="1589016739839">
+    <state x="2336" y="48" key="#Unittests_for_test_4_classes&amp;brand.Classes.test_1_Food_category" timestamp="1611565838911">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2336" y="48" key="#Unittests_for_test_4_classes&amp;brand.Classes/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1589016739839" />
-    <state x="2049" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585895585439">
+    <state x="2336" y="48" key="#Unittests_for_test_4_classes&amp;brand.Classes.test_1_Food_category/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611565838911" />
+    <state x="2336" y="48" key="#Unittests_for_test_4_classes&amp;brand.Classes/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611653880702" />
+    <state x="2370" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611649942771">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2049" y="93" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1585895585439" />
-    <state x="2370" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584607624540">
+    <state x="2370" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611649942771" />
+    <state width="1397" height="237" key="GridCell.Tab.0.bottom" timestamp="1611714798657">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2370" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1584607624540" />
-    <state x="2264" y="2" key="CommitChangelistDialog2" timestamp="1592620753231">
+    <state width="1397" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611714798657" />
+    <state width="1397" height="237" key="GridCell.Tab.0.center" timestamp="1611714798656">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="459" y="0" key="CommitChangelistDialog2/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1589181617069" />
-    <state x="2264" y="2" key="CommitChangelistDialog2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592620753231" />
-    <state x="2420" y="187" key="FileChooserDialogImpl" timestamp="1587625326124">
+    <state width="1397" height="237" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611714798656" />
+    <state width="1397" height="237" key="GridCell.Tab.0.left" timestamp="1611714798656">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2420" y="187" key="FileChooserDialogImpl/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587625326124" />
-    <state width="1397" height="319" key="GridCell.Tab.0.bottom" timestamp="1592642997129">
+    <state width="1397" height="237" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611714798656" />
+    <state width="1397" height="237" key="GridCell.Tab.0.right" timestamp="1611714798656">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997129" />
-    <state width="1397" height="319" key="GridCell.Tab.0.center" timestamp="1592642997129">
+    <state width="1397" height="237" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611714798656" />
+    <state width="1397" height="318" key="GridCell.Tab.1.bottom" timestamp="1611713179262">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.0.center/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997129" />
-    <state width="1397" height="319" key="GridCell.Tab.0.left" timestamp="1592642997129">
+    <state width="1397" height="318" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611713179262" />
+    <state width="1397" height="318" key="GridCell.Tab.1.center" timestamp="1611713179262">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.0.left/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997129" />
-    <state width="1397" height="319" key="GridCell.Tab.0.right" timestamp="1592642997129">
+    <state width="1397" height="318" key="GridCell.Tab.1.center/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611713179262" />
+    <state width="1397" height="318" key="GridCell.Tab.1.left" timestamp="1611713179262">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.0.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997129" />
-    <state width="1397" height="319" key="GridCell.Tab.1.bottom" timestamp="1592642997130">
+    <state width="1397" height="318" key="GridCell.Tab.1.left/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611713179262" />
+    <state width="1397" height="318" key="GridCell.Tab.1.right" timestamp="1611713179262">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997130" />
-    <state width="1397" height="319" key="GridCell.Tab.1.center" timestamp="1592642997130">
+    <state width="1397" height="318" key="GridCell.Tab.1.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611713179262" />
+    <state x="2433" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611717312485">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.1.center/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.1.center/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997130" />
-    <state width="1397" height="319" key="GridCell.Tab.1.left" timestamp="1592642997130">
+    <state x="2433" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611717312485" />
+    <state x="2184" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611712427679">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state width="1397" height="245" key="GridCell.Tab.1.left/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.1.left/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997130" />
-    <state width="1397" height="319" key="GridCell.Tab.1.right" timestamp="1592642997130">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state width="1397" height="245" key="GridCell.Tab.1.right/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1585361514990" />
-    <state width="1397" height="319" key="GridCell.Tab.1.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592642997130" />
-    <state x="2505" y="133" key="RollbackChangesDialog" timestamp="1590542409432">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2505" y="133" key="RollbackChangesDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1590542409432" />
-    <state x="2073" y="79" key="SettingsEditor" timestamp="1591321241464">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="559" y="112" key="SettingsEditor/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1589180851090" />
-    <state x="2073" y="79" key="SettingsEditor/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1591321241464" />
-    <state x="681" y="261" width="582" height="524" key="StructurePopup" timestamp="1584063226384">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="681" y="261" width="582" height="524" key="StructurePopup/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1584063226384" />
-    <state x="2232" y="165" key="Vcs.Push.Dialog.v2" timestamp="1592620768209">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="416" y="197" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1589181633835" />
-    <state x="2232" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1592620768209" />
-    <state x="2012" y="94" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1587541672089">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2012" y="94" width="1256" height="676" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587541672089" />
-    <state x="2320" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1587536188820">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="533" y="307" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.2.1440.860@0.0.1920.1040" timestamp="1583998993912" />
-    <state x="2320" y="256" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587536188820" />
-    <state x="2433" y="120" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587364431400">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2433" y="120" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587364431400" />
-    <state x="2432" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587956257236">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2432" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587956257236" />
-    <state x="2316" y="39" width="647" height="786" key="find.popup" timestamp="1586333063688">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2316" y="39" width="647" height="786" key="find.popup/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1586333063688" />
-    <state x="2281" y="158" width="700" height="530" key="recent.locations.popup" timestamp="1587364982834">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2281" y="158" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1587364982834" />
-    <state x="2381" y="74" key="refactoring.ChangeSignatureDialog" timestamp="1584670629953">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2381" y="74" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1584670629953" />
-    <state x="2305" y="183" width="672" height="678" key="search.everywhere.popup" timestamp="1591969662942">
-      <screen x="1920" y="2" width="1440" height="860" />
-    </state>
-    <state x="2305" y="183" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1591969662942" />
+    <state x="2184" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611712427679" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python_work$Unittests_in_food_py.coverage" NAME="Unittests in food.py Coverage Results" MODIFIED="1584580167110" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$test_3_greens.coverage" NAME="test_3_greens Coverage Results" MODIFIED="1587365786715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_2_delete.coverage" NAME="Unittests for test_1_food.Food.test_2_delete Coverage Results" MODIFIED="1611648736255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes_test_3_edit.coverage" NAME="Unittests for test_4_classes.Classes.test_3_edit Coverage Results" MODIFIED="1587869202445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_testfile_py.coverage" NAME="Unittests in testfile.py Coverage Results" MODIFIED="1611567793642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$AotuSendEmail.coverage" NAME="AotuSendEmail Coverage Results" MODIFIED="1585119858018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite/Email" />
+    <SUITE FILE_PATH="coverage/Python_work$test_suite.coverage" NAME="test_suite Coverage Results" MODIFIED="1585794188861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes_test_2_confirm.coverage" NAME="Unittests for test_4_classes.Classes.test_2_confirm Coverage Results" MODIFIED="1587690139379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$log.coverage" NAME="log Coverage Results" MODIFIED="1588060838142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Log" />
+    <SUITE FILE_PATH="coverage/Python_work$test_3_greens__1_.coverage" NAME="test_3_greens (1) Coverage Results" MODIFIED="1587535168513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients_test_library1.coverage" NAME="Unittests for ingredients.Ingredients.test_library1 Coverage Results" MODIFIED="1584517064869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_1_food_py.coverage" NAME="Unittests in test_1_food.py Coverage Results" MODIFIED="1611714798647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$frist.coverage" NAME="frist Coverage Results" MODIFIED="1584609246646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_3_greens_Greens.coverage" NAME="Unittests for test_3_greens.Greens Coverage Results" MODIFIED="1587539732934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes_test_1_Food_category.coverage" NAME="Unittests for test_4_classes.Classes.test_1_Food_category Coverage Results" MODIFIED="1587634246736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_3_greens_Greens_test_2_list.coverage" NAME="Unittests for test_3_greens.Greens.test_2_list Coverage Results" MODIFIED="1587539872060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_2_To_audit.coverage" NAME="Unittests for test_1_food.Food.test_2_To_audit Coverage Results" MODIFIED="1585118598566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$test.coverage" NAME="test Coverage Results" MODIFIED="1583485200975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
+    <SUITE FILE_PATH="coverage/Python_work$login.coverage" NAME="login Coverage Results" MODIFIED="1611648720207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
+    <SUITE FILE_PATH="coverage/Python_work$testfile.coverage" NAME="testfile Coverage Results" MODIFIED="1600243190921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_food_Food.coverage" NAME="Unittests for food.Food Coverage Results" MODIFIED="1584579890082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_3_greens_py.coverage" NAME="Unittests in test_3_greens.py Coverage Results" MODIFIED="1611709786924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_food_Food_test_1_food.coverage" NAME="Unittests for food.Food.test_1_food Coverage Results" MODIFIED="1584518964807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_2_ingredients_Ingredients_test_3_to_audit.coverage" NAME="Unittests for test_2_ingredients.Ingredients.test_3_to_audit Coverage Results" MODIFIED="1587969730751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_2_food.coverage" NAME="Unittests for test_1_food.Food.test_2_food Coverage Results" MODIFIED="1590542164059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Global__1_.coverage" NAME="Global (1) Coverage Results" MODIFIED="1611649752823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_6_user_py.coverage" NAME="Unittests in test_6_user.py Coverage Results" MODIFIED="1611714114566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_6_user_Brand_test_1_superior.coverage" NAME="Unittests for test_6_user.Brand.test_1_superior Coverage Results" MODIFIED="1611564698505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$test_3_greens.coverage" NAME="test_3_greens Coverage Results" MODIFIED="1587365786715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes_test_4_delete.coverage" NAME="Unittests for test_4_classes.Classes.test_4_delete Coverage Results" MODIFIED="1588122856415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_4_classes_py.coverage" NAME="Unittests in test_4_classes&amp;brand.py Coverage Results" MODIFIED="1588153276127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$AutoSendEmail__1_.coverage" NAME="AutoSendEmail (1) Coverage Results" MODIFIED="1585792619842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite/Email" />
     <SUITE FILE_PATH="coverage/Python_work$ingredients.coverage" NAME="ingredients Coverage Results" MODIFIED="1584406941242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients.coverage" NAME="Unittests for ingredients.Ingredients Coverage Results" MODIFIED="1584516896533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$AotuSendEmail.coverage" NAME="AotuSendEmail Coverage Results" MODIFIED="1585119858018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite/Email" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_3_greens_Greens_test_1_menu.coverage" NAME="Unittests for test_3_greens.Greens.test_1_menu Coverage Results" MODIFIED="1587604913250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$test_suite.coverage" NAME="test_suite Coverage Results" MODIFIED="1585794188861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes_test_2_confirm.coverage" NAME="Unittests for test_4_classes.Classes.test_2_confirm Coverage Results" MODIFIED="1587690139379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$log.coverage" NAME="log Coverage Results" MODIFIED="1588060838142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Log" />
-    <SUITE FILE_PATH="coverage/Python_work$test_3_greens__1_.coverage" NAME="test_3_greens (1) Coverage Results" MODIFIED="1587535168513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_4_classes_brand_py.coverage" NAME="Unittests in test_4_classes&amp;brand.py Coverage Results" MODIFIED="1592623303727" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_4_classes_brand_py.coverage" NAME="Unittests in test_4_classes&amp;brand.py Coverage Results" MODIFIED="1611654242224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_in_ingredients_py.coverage" NAME="Unittests in ingredients.py Coverage Results" MODIFIED="1584511148802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients_test_library1.coverage" NAME="Unittests for ingredients.Ingredients.test_library1 Coverage Results" MODIFIED="1584517064869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_1_food_py.coverage" NAME="Unittests in test_1_food.py Coverage Results" MODIFIED="1591971498726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$frist.coverage" NAME="frist Coverage Results" MODIFIED="1584609246646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_3_greens_Greens.coverage" NAME="Unittests for test_3_greens.Greens Coverage Results" MODIFIED="1587539732934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes_test_1_Food_category.coverage" NAME="Unittests for test_4_classes.Classes.test_1_Food_category Coverage Results" MODIFIED="1587634246736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_1_food.coverage" NAME="Unittests for test_1_food.Food.test_1_food Coverage Results" MODIFIED="1590542388636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$run_test_suite.coverage" NAME="run_test_suite Coverage Results" MODIFIED="1590540565496" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_3_greens_Greens_test_2_list.coverage" NAME="Unittests for test_3_greens.Greens.test_2_list Coverage Results" MODIFIED="1587539872060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_5_type_Brand.coverage" NAME="Unittests for test_5_type.Brand Coverage Results" MODIFIED="1611649006562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_1_food.coverage" NAME="Unittests for test_1_food.Food.test_1_food Coverage Results" MODIFIED="1611712284341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$run_test_suite.coverage" NAME="run_test_suite Coverage Results" MODIFIED="1611712148800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_2_ingredients_Ingredients_test_1_library.coverage" NAME="Unittests for test_2_ingredients.Ingredients.test_1_library Coverage Results" MODIFIED="1590542375152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_2_ingredients_Ingredients.coverage" NAME="Unittests for test_2_ingredients.Ingredients Coverage Results" MODIFIED="1587365649236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food.coverage" NAME="Unittests for test_1_food.Food Coverage Results" MODIFIED="1592621362035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_2_To_audit.coverage" NAME="Unittests for test_1_food.Food.test_2_To_audit Coverage Results" MODIFIED="1585118598566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$test.coverage" NAME="test Coverage Results" MODIFIED="1583485200975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
-    <SUITE FILE_PATH="coverage/Python_work$login.coverage" NAME="login Coverage Results" MODIFIED="1589166407019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_food_Food.coverage" NAME="Unittests for food.Food Coverage Results" MODIFIED="1584579890082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_5_type_py.coverage" NAME="Unittests in test_5_type.py Coverage Results" MODIFIED="1592642997111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_3_greens_py.coverage" NAME="Unittests in test_3_greens.py Coverage Results" MODIFIED="1587610372562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food.coverage" NAME="Unittests for test_1_food.Food Coverage Results" MODIFIED="1611714591720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_5_type_py.coverage" NAME="Unittests in test_5_type.py Coverage Results" MODIFIED="1611563545080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients_test_select.coverage" NAME="Unittests for ingredients.Ingredients.test_select Coverage Results" MODIFIED="1584500907765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_food_Food_test_1_food.coverage" NAME="Unittests for food.Food.test_1_food Coverage Results" MODIFIED="1584518964807" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_2_ingredients_py.coverage" NAME="Unittests in test_2_ingredients.py Coverage Results" MODIFIED="1587969901779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$Unittests_in_test_2_ingredients_py.coverage" NAME="Unittests in test_2_ingredients.py Coverage Results" MODIFIED="1611713919561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
+    <SUITE FILE_PATH="coverage/Python_work$global.coverage" NAME="Global Coverage Results" MODIFIED="1611647437342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients_test_i.coverage" NAME="Unittests for ingredients.Ingredients.test_i Coverage Results" MODIFIED="1584513683415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_2_ingredients_Ingredients_test_3_to_audit.coverage" NAME="Unittests for test_2_ingredients.Ingredients.test_3_to_audit Coverage Results" MODIFIED="1587969730751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$run_test_suite__1_.coverage" NAME="run_test_suite (1) Coverage Results" MODIFIED="1586245654314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/Suite" />
-    <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_1_food_Food_test_2_food.coverage" NAME="Unittests for test_1_food.Food.test_2_food Coverage Results" MODIFIED="1590542164059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_test_4_classes_Classes.coverage" NAME="Unittests for test_4_classes.Classes Coverage Results" MODIFIED="1588066589141" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TestCase" />
     <SUITE FILE_PATH="coverage/Python_work$food.coverage" NAME="food Coverage Results" MODIFIED="1584437895643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS" />
     <SUITE FILE_PATH="coverage/Python_work$Unittests_for_ingredients_Ingredients_test_library.coverage" NAME="Unittests for ingredients.Ingredients.test_library Coverage Results" MODIFIED="1584502080430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/OPS/TsesCase" />
