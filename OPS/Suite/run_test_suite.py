@@ -49,7 +49,7 @@ if __name__ == '__main__':
     # wb 是二进制写入
 
     # 生成报告文件前先清空文件夹
-    path = r'.\OPS\Suite\Report\*.html'  # 文件路径
+    path = './OPS/Suite/Report/*.html'  # 文件路径
     if os.path.exists(path):  # 如果文件存在
         # 删除文件，可使用以下两种方法。
         os.remove(path)

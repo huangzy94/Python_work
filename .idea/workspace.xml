@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c18c2-66d4-4485-b79e-892b8a3c227c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPS/Log/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPS/Log/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPS/Log/log/warning.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/warning.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_1_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_1_food.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/Suite/run_test_suite.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Suite/run_test_suite.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -275,7 +270,7 @@
       <workItem from="1611731930994" duration="103000" />
       <workItem from="1611732260171" duration="299000" />
       <workItem from="1611732863922" duration="1163000" />
-      <workItem from="1611740417726" duration="3545000" />
+      <workItem from="1611740417726" duration="4508000" />
     </task>
     <task id="LOCAL-00001" summary="。。">
       <created>1586239216015</created>
