@@ -1,36 +1,20 @@
-[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 136 - test_4_add2] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div/div/ul/li[5]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 136 - test_4_add2] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/div/ul/li[5]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 138 - test_4_add2] 当前定位的元素为：/html/body/div[7]/div/div/ul/li[5]/a
-[2021-01-27 15:40:48] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 142 - test_4_add2] test_4_add2 遍历耗时：0:00:00.101304
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 154 - test_5_delete] 遍历字典找到想要的元素定位
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div/ul/li[2]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div/ul/li[2]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div/ul/li[2]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div/div/ul/li[2]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 170 - test_5_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/div/ul/li[2]/a"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 172 - test_5_delete] 当前定位的元素为：/html/body/div[7]/div/div/ul/li[2]/a
-[2021-01-27 15:40:49] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 177 - test_5_delete] test_5_delete 遍历耗时：0:00:00.103684
-[2021-01-27 15:40:50] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 185 - test_6_ensure] 遍历字典找到想要的元素定位
-[2021-01-27 15:40:50] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 206 - test_6_ensure] test_6_ensure 遍历耗时：0:00:00.110647
-[2021-01-27 15:40:50] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 208 - test_6_ensure] 餐饮单位流程结束----------------------------------------------------------------------
-[2021-01-27 15:40:52] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 237 - test_6_ensure] test_6_ensure2 遍历耗时：0:00:02.033404
-[2021-01-27 15:40:52] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 239 - test_6_ensure] 餐饮管理单位流程结束----------------------------------------------------------------------
-[2021-01-27 15:40:52] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 241 - test_6_ensure] 添加供货商流程开始----------------------------------------------------------------------
-[2021-01-27 15:40:57] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 287 - test_6_ensure] test_6_ensure3 遍历耗时：0:00:06.849828
-[2021-01-27 15:40:57] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 289 - test_6_ensure] 供货商流程结束----------------------------------------------------------------------
-[2021-01-27 15:40:57] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 55 - <module>] 测试报告已生成,本地存放路径：D:\Python_work\OPS\Suite\Report
-[2021-01-27 15:40:58] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 59 - <module>] 已发送测试报告
+[2021-01-27 17:50:15] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 185 - test_6_ensure] 遍历字典找到想要的元素定位
+[2021-01-27 17:50:15] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 208 - test_6_ensure] 餐饮单位流程结束----------------------------------------------------------------------
+[2021-01-27 17:50:17] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 67 - <module>] 测试报告已生成,本地存放路径：D:\Python_work\OPS\Suite\Report
+[2021-01-27 17:50:19] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 71 - <module>] 已发送测试报告
+[2021-01-28 08:54:46] [debug] [D:/Python_work/OPS/Suite/run_test_suite.py - 45 - <module>] 开始运行测试套件/集合：run_test_suite.py
+[2021-01-28 08:54:46] [debug] [D:\Python_work\OPS\TestCase\test_3_greens.py - 15 - Greens] 菜品库流程测试
+[2021-01-28 08:54:46] [debug] [D:\Python_work\OPS\TestCase\test_5_type.py - 16 - Brand] 票证类型流程测试
+[2021-01-28 08:54:46] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 14 - Brand] 用户管理流程测试
+[2021-01-28 08:54:46] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 20 - setUpClass] 调用Login类的登录方法
+[2021-01-28 08:54:49] [debug] [D:\Python_work\OPS\login.py - 49 - URL] 当前访问地址为：'http://ap-ops.td.com'
+[2021-01-28 08:54:49] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 23 - setUpClass] 实例化Login类login方法
+[2021-01-28 08:54:57] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 84 - test_1_food] 新增食材
+[2021-01-28 08:55:01] [debug] [D:\Python_work\OPS\TestCase\test_1_food.py - 122 - test_1_food] 操作滚动条滚动到底部元素位置
+[2021-01-28 08:55:09] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 14 - Brand] 用户管理流程测试
+[2021-01-28 08:55:11] [debug] [D:\Python_work\OPS\login.py - 49 - URL] 当前访问地址为：'http://ap-ops.td.com'
+[2021-01-28 08:55:11] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 20 - setUpClass] 实例化Login类login方法
+[2021-01-28 08:55:11] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 26 - test_1_superior] 添加管理单位流程开始----------------------------------------------------------------------
+[2021-01-28 08:55:16] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 47 - test_2_add1] 遍历字典找到想要的元素定位
+[2021-01-28 08:55:17] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 68 - test_2_add1] test_2_add1 遍历耗时：0:00:00.069976
+[2021-01-28 08:55:17] [debug] [D:\Python_work\OPS\TestCase\test_6_user.py - 79 - test_3_catering] 添加餐饮单位流程开始----------------------------------------------------------------------

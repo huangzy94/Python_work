@@ -37,6 +37,7 @@ class Brand(unittest.TestCase):
         self.driver.find_element(By.XPATH, '//*[@id="zoneId"]').send_keys("\n")
         self.driver.find_element(By.XPATH, '//li[contains(text(),"北京市")]').click()
         self.driver.find_element(By.XPATH, '//li[contains(text(),"东城区")]').click()
+        self.driver.find_element(By.XPATH, '//*[@id="authModules"]/label[1]/span[1]/input').click()
         sleep(1)
 
         # 保存信息

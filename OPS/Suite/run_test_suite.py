@@ -1,3 +1,4 @@
+import os
 import time
 import unittest
 from HTMLTestRunner import HTMLTestRunner
@@ -46,6 +47,18 @@ if __name__ == '__main__':
     # w 是写入模式
     # r 是读取模式
     # wb 是二进制写入
+
+    # 生成报告文件前先清空文件夹
+    path = r'.\OPS\Suite\Report\*.html'  # 文件路径
+    if os.path.exists(path):  # 如果文件存在
+        # 删除文件，可使用以下两种方法。
+        os.remove(path)
+        # os.unlink(path)
+        print('历史报告文件已删除，正在生成新的报告')
+    else:
+        print('不存在该文件:%s' % path)  # 则返回文件不存在
+
+    # 命名并生成测试报告
     filepath = "./Report/" + now + "_result.html"
     r = open(filepath, "wb")
     # 执行测试
