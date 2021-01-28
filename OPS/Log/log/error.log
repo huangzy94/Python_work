@@ -1,54 +1,30 @@
-[2021-01-27 17:49:49] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 62 - test_2_add] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
+[2021-01-28 09:35:53] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 174 - test_6_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[7]/div/div/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:54] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 104 - test_3_relevance] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div/div/div/div/div[1]/table/thead/tr/th[3]/span/div/span[1]/a"}
+[2021-01-28 09:36:08] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 65 - test_2_add1] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:54] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 104 - test_3_relevance] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div[2]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div/div/div/div/div[1]/table/thead/tr/th[3]/span/div/span[1]/a"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:54] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 104 - test_3_relevance] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div[2]/div/div[1]/div/div/div/div/div/div/div/div/div[1]/table/thead/tr/th[3]/span/div/span[1]/a"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:54] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 131 - test_4_confirm] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:54] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 131 - test_4_confirm] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:54] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 131 - test_4_confirm] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:49:57] [error] [D:\Python_work\OPS\TestCase\test_5_type.py - 174 - test_6_delete] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[7]/div/div/div/div[2]/div/div/div[2]/button[2]"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:50:09] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 61 - test_2_add1] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[5]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[6]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[4]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[3]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[7]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[8]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-27 17:50:15] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 201 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
-  (Session info: chrome=88.0.4324.104)
-
-[2021-01-28 08:55:17] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 62 - test_2_add1] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/div[2]/div/div[2]/div[3]/div/button[2]"}
+[2021-01-28 09:36:18] [error] [D:\Python_work\OPS\TestCase\test_6_user.py - 205 - test_6_ensure] Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[9]/div/div[2]/div/div[2]/div/div/div[2]/button[2]"}
   (Session info: chrome=88.0.4324.104)
 

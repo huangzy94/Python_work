@@ -125,7 +125,7 @@ class Food(unittest.TestCase):
         upload1 = '//*[@id="root"]/section/main/div/div[6]/div[2]/div[1]/span/div[1]/span/button'
         self.driver.find_element_by_xpath(upload1).click()
         sleep(1)
-        # 调用AutoIt脚本实现文件上传
+        # 调用AutoIt脚本实现文件上传(AutoIt查询百度)
         os.system(r'D:\Python_work\AutoIt_Script\ops食材库优质样例图片.exe')
         sleep(3)
         logger.debug("调用AutoIt脚本实现文件上传")

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7c18c2-66d4-4485-b79e-892b8a3c227c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_6_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_6_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/Log/log/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/Log/log/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/Log/log/warning.log" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/Log/log/warning.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OPS/TestCase/test_1_food.py" beforeDir="false" afterPath="$PROJECT_DIR$/OPS/TestCase/test_1_food.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -272,7 +275,7 @@
       <workItem from="1611731930994" duration="103000" />
       <workItem from="1611732260171" duration="299000" />
       <workItem from="1611732863922" duration="1163000" />
-      <workItem from="1611740417726" duration="2208000" />
+      <workItem from="1611740417726" duration="3545000" />
     </task>
     <task id="LOCAL-00001" summary="。。">
       <created>1586239216015</created>
@@ -393,7 +396,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611795434887</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="管理单位-权限分配功能测试代码">
+      <created>1611795941996</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1611795941996</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,10 +463,10 @@
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state x="2370" y="178" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611649942771" />
-    <state x="2221" y="2" key="CommitChangelistDialog2" timestamp="1611795433834">
+    <state x="2221" y="2" key="CommitChangelistDialog2" timestamp="1611795941090">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2221" y="2" key="CommitChangelistDialog2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611795433834" />
+    <state x="2221" y="2" key="CommitChangelistDialog2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611795941090" />
     <state width="1397" height="237" key="GridCell.Tab.0.bottom" timestamp="1611795308898">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
@@ -489,14 +499,14 @@
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
     <state width="1397" height="318" key="GridCell.Tab.1.right/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611731824551" />
-    <state x="2232" y="165" key="Vcs.Push.Dialog.v2" timestamp="1611795444314">
+    <state x="2232" y="165" key="Vcs.Push.Dialog.v2" timestamp="1611796219618">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2232" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611795444314" />
-    <state x="2433" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611795389675">
+    <state x="2232" y="165" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611796219618" />
+    <state x="2433" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611795918409">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
-    <state x="2433" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611795389675" />
+    <state x="2433" y="345" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.2.1440.860@1920.2.1440.860" timestamp="1611795918409" />
     <state x="2184" y="161" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611712427679">
       <screen x="1920" y="2" width="1440" height="860" />
     </state>
